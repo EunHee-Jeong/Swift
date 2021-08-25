@@ -91,7 +91,6 @@ let initializedDictionary: [String: String] = ["name":"majayong", "gender":"fema
 
 // 1. Set 생성 및 선언
 var integerSet: Set<Int> = Set<Int>()
-// Set은 축약형이 없음에 주의
 
 // insert: 새로운 멤버 입력
 // 동일한 값은 여러 번 insert해도 한 번만 저장된다.
