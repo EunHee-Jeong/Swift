@@ -31,7 +31,6 @@ let apart: Apartment? = Apartment(dong: "3", ho: "201")
 let superman: Person? = Person(name: "superman")
 // 옵셔널 체이닝의 실행 후 결과값이 nil일 수도 있으므로 결과 타입도 옵셔널인 것임
 
-// 옵셔널 체이닝 사용 x
 func guardJob(owner: Person?) {
     if let owner = owner {
         if let home = owner.home {
