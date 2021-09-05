@@ -46,3 +46,4 @@ extension String {
 
 let stringFromInt: String = String(int: 100)    // "100"
 let stringFromDouble: String = String(double: 100.0) // "100.0"
+
