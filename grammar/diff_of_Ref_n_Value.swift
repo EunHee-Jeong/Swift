@@ -28,4 +28,3 @@ print("first class reference property: \(firstClassReference.property)")    // 2
 print("second class reference property: \(secondClassReference.property)")  // 2
 // 두 번재 클래스 참조는 첫 번째 클래스 인스턴스를 참조하기 때문에
 // 두 번째 참조를 통해 인스턴스 프로퍼티의 값을 변경하면 첫 번째 클래스 인스턴스의 프로퍼티 값도 변경됨
-
