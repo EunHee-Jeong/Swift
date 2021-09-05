@@ -44,3 +44,4 @@ func sum2(first: Int) -> ((Int) -> Int) {
     return { second in first + second }
 }
 sum2(first: 2)(5)   // 3
+
