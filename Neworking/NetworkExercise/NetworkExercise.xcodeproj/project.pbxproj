@@ -13,6 +13,9 @@
 		F6359D3C27549B9400EB3DEC /* RecommendCarDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6359D3B27549B9400EB3DEC /* RecommendCarDataModel.swift */; };
 		F6359D3E27549D8100EB3DEC /* GetRecommendDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6359D3D27549D8100EB3DEC /* GetRecommendDataService.swift */; };
 		F6359D402754C91E00EB3DEC /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6359D3F2754C91E00EB3DEC /* Dictionary+Extension.swift */; };
+		F6359D4227551B7200EB3DEC /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6359D4127551B7200EB3DEC /* APIConstants.swift */; };
+		F6359D4427551D9C00EB3DEC /* FavoriteDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6359D4327551D9B00EB3DEC /* FavoriteDataModel.swift */; };
+		F6359D4627551F1100EB3DEC /* PUTFavoriteDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6359D4527551F1100EB3DEC /* PUTFavoriteDataService.swift */; };
 		F6C7DAEF27542B1E00DC8027 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C7DAEE27542B1E00DC8027 /* AppDelegate.swift */; };
 		F6C7DAF127542B1E00DC8027 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C7DAF027542B1E00DC8027 /* SceneDelegate.swift */; };
 		F6C7DAF327542B1E00DC8027 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C7DAF227542B1E00DC8027 /* ViewController.swift */; };
@@ -30,6 +33,9 @@
 		F6359D3B27549B9400EB3DEC /* RecommendCarDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCarDataModel.swift; sourceTree = "<group>"; };
 		F6359D3D27549D8100EB3DEC /* GetRecommendDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRecommendDataService.swift; sourceTree = "<group>"; };
 		F6359D3F2754C91E00EB3DEC /* Dictionary+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
+		F6359D4127551B7200EB3DEC /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		F6359D4327551D9B00EB3DEC /* FavoriteDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDataModel.swift; sourceTree = "<group>"; };
+		F6359D4527551F1100EB3DEC /* PUTFavoriteDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PUTFavoriteDataService.swift; sourceTree = "<group>"; };
 		F6C7DAEB27542B1E00DC8027 /* NetworkExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C7DAEE27542B1E00DC8027 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6C7DAF027542B1E00DC8027 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,8 +99,11 @@
 				F6C7DAEE27542B1E00DC8027 /* AppDelegate.swift */,
 				F6C7DAF027542B1E00DC8027 /* SceneDelegate.swift */,
 				F6C7DAF227542B1E00DC8027 /* ViewController.swift */,
-				F6359D37275496F000EB3DEC /* NetworkResult.swift */,
 				F6C7DAF427542B1E00DC8027 /* Main.storyboard */,
+				F6359D37275496F000EB3DEC /* NetworkResult.swift */,
+				F6359D4127551B7200EB3DEC /* APIConstants.swift */,
+				F6359D4327551D9B00EB3DEC /* FavoriteDataModel.swift */,
+				F6359D4527551F1100EB3DEC /* PUTFavoriteDataService.swift */,
 				F6359D39275497B500EB3DEC /* GETViewController.swift */,
 				F6359D3B27549B9400EB3DEC /* RecommendCarDataModel.swift */,
 				F6359D3D27549D8100EB3DEC /* GetRecommendDataService.swift */,
@@ -225,8 +234,11 @@
 				F6C7DAF327542B1E00DC8027 /* ViewController.swift in Sources */,
 				F6C7DAEF27542B1E00DC8027 /* AppDelegate.swift in Sources */,
 				F6359D402754C91E00EB3DEC /* Dictionary+Extension.swift in Sources */,
+				F6359D4427551D9C00EB3DEC /* FavoriteDataModel.swift in Sources */,
 				F6359D3C27549B9400EB3DEC /* RecommendCarDataModel.swift in Sources */,
+				F6359D4227551B7200EB3DEC /* APIConstants.swift in Sources */,
 				F6359D3A275497B500EB3DEC /* GETViewController.swift in Sources */,
+				F6359D4627551F1100EB3DEC /* PUTFavoriteDataService.swift in Sources */,
 				F6C7DAF127542B1E00DC8027 /* SceneDelegate.swift in Sources */,
 				F6359D38275496F000EB3DEC /* NetworkResult.swift in Sources */,
 			);
