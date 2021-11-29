@@ -22,14 +22,17 @@ struct GetRecommendDataService
      */
     {
         // 1. 데이터를 받아오기 위한 주소 정의
-        let URL = "https://asia-northeast3-socar-server-814e9.cloudfunctions.net/api"
-        let header: HTTPHeaders = ["Content-Type": "/my/recommend"] // 헤더는 key-value 형태로 작성
+        let URL = "https://asia-northeast3-socar-server-814e9.cloudfunctions.net/api/my/recommend"
+        let header: [String: Any] = [
+            "Content-Type": "application/json",
+            "userId": 1
+        ]
         
         // 2. 통신을 위한 요청서 작성
         let dataRequest = AF.request(URL,
                                      method: .get,
                                      encoding: JSONEncoding.default,
-                                     headers: header)
+                                     headers: header.toHTTPHeaders())
         
         // 3. 2번에서 정의한 요청서로 서버에 통신 request
         dataRequest.responseData { dataResponse in

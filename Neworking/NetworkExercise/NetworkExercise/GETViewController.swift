@@ -12,7 +12,6 @@ class GETViewController: UIViewController {
     // MARK: - @IBOutlet Properties
     
     @IBOutlet var nameLabel: UILabel!
-    @IBOutlet var messageLabel: UILabel!
     
     // MARK: - View Life Cycle
     
@@ -33,7 +32,6 @@ class GETViewController: UIViewController {
             case .success(let recommendData):   // recommendData => 성공시 클로저에서 넘어오는 데이터
                 if let data = recommendData as? RecommendCars {
                     self.nameLabel.text = data.carName
-                    self.messageLabel.text = data.priceUnit
                 }
             case .requestErr(let message):
                 print("requestErr", message)
