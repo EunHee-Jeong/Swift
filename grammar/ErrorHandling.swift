@@ -117,3 +117,4 @@ result  // nil
 
 result = try! machine.vend(numberOfItems: 1)
 result  // 1개 제공함
+
