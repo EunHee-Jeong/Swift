@@ -24,7 +24,7 @@ class GETViewController: UIViewController {
 
     @IBAction func getButtonClicked(_ sender: Any) {
         
-        GetRecommendDataService.shared.getRecommendInfo { (response) in
+        GetRecommendDataService.shared.getRecommendInfo(userId: 1) { (response) in
             // GetRecommendDataService 구조체에서 공용 인스턴스 shared에 접근
             
             switch(response)

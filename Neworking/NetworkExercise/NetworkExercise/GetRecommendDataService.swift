@@ -13,7 +13,8 @@ struct GetRecommendDataService
     static let shared = GetRecommendDataService()   // 싱글톤 인스턴스 생성
     // ➡️ 여러 VC에서 shared를 통해 같은 인스턴스에 접근할 수 있게 함
     
-    func getRecommendInfo(completion: @escaping (NetworkResult<Any>) -> Void)
+    func getRecommendInfo(userId: Int,
+                          completion: @escaping (NetworkResult<Any>) -> Void)
     /*
      escape closure 형태로 completion 정의
      이 함수가 종료되든 말든 상관 없이, 전달만 된다면 이후에 외부에서도 사용 가능하게 함.
@@ -25,7 +26,7 @@ struct GetRecommendDataService
         let URL = "https://asia-northeast3-socar-server-814e9.cloudfunctions.net/api/my/recommend"
         let header: [String: Any] = [
             "Content-Type": "application/json",
-            "userId": 1
+            "userId": userId
         ]
         
         // 2. 통신을 위한 요청서 작성
@@ -41,7 +42,7 @@ struct GetRecommendDataService
             switch dataResponse.result {    // 통신 결과물들
                 
             case .success:
-                guard let statusCode = dataResponse.response?.statusCode else {return}
+                guard let statusCode = dataRequest.response?.statusCode else {return}
                 guard let value = dataResponse.value else {return}
                 let networkResult = self.judgeStatus(by: statusCode, value)
                 completion(networkResult)
