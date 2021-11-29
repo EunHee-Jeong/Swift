@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3E8AC6EC889B7F2309DA8A9C /* Pods_NetworkExercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71636CB519E59FC512C14F75 /* Pods_NetworkExercise.framework */; };
+		F6359D38275496F000EB3DEC /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6359D37275496F000EB3DEC /* NetworkResult.swift */; };
+		F6359D3A275497B500EB3DEC /* GETViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6359D39275497B500EB3DEC /* GETViewController.swift */; };
+		F6359D3C27549B9400EB3DEC /* RecommendCarDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6359D3B27549B9400EB3DEC /* RecommendCarDataModel.swift */; };
+		F6359D3E27549D8100EB3DEC /* GetRecommendDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6359D3D27549D8100EB3DEC /* GetRecommendDataService.swift */; };
 		F6C7DAEF27542B1E00DC8027 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C7DAEE27542B1E00DC8027 /* AppDelegate.swift */; };
 		F6C7DAF127542B1E00DC8027 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C7DAF027542B1E00DC8027 /* SceneDelegate.swift */; };
 		F6C7DAF327542B1E00DC8027 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C7DAF227542B1E00DC8027 /* ViewController.swift */; };
@@ -20,6 +24,10 @@
 		02551A9439392D93566C4D25 /* Pods-NetworkExercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkExercise.release.xcconfig"; path = "Target Support Files/Pods-NetworkExercise/Pods-NetworkExercise.release.xcconfig"; sourceTree = "<group>"; };
 		17E3AE1565F0DB9599984FB1 /* Pods-NetworkExercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkExercise.debug.xcconfig"; path = "Target Support Files/Pods-NetworkExercise/Pods-NetworkExercise.debug.xcconfig"; sourceTree = "<group>"; };
 		71636CB519E59FC512C14F75 /* Pods_NetworkExercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkExercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6359D37275496F000EB3DEC /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		F6359D39275497B500EB3DEC /* GETViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GETViewController.swift; sourceTree = "<group>"; };
+		F6359D3B27549B9400EB3DEC /* RecommendCarDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCarDataModel.swift; sourceTree = "<group>"; };
+		F6359D3D27549D8100EB3DEC /* GetRecommendDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRecommendDataService.swift; sourceTree = "<group>"; };
 		F6C7DAEB27542B1E00DC8027 /* NetworkExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C7DAEE27542B1E00DC8027 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6C7DAF027542B1E00DC8027 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +56,6 @@
 				17E3AE1565F0DB9599984FB1 /* Pods-NetworkExercise.debug.xcconfig */,
 				02551A9439392D93566C4D25 /* Pods-NetworkExercise.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -84,7 +91,11 @@
 				F6C7DAEE27542B1E00DC8027 /* AppDelegate.swift */,
 				F6C7DAF027542B1E00DC8027 /* SceneDelegate.swift */,
 				F6C7DAF227542B1E00DC8027 /* ViewController.swift */,
+				F6359D37275496F000EB3DEC /* NetworkResult.swift */,
 				F6C7DAF427542B1E00DC8027 /* Main.storyboard */,
+				F6359D39275497B500EB3DEC /* GETViewController.swift */,
+				F6359D3B27549B9400EB3DEC /* RecommendCarDataModel.swift */,
+				F6359D3D27549D8100EB3DEC /* GetRecommendDataService.swift */,
 				F6C7DAF727542B2000DC8027 /* Assets.xcassets */,
 				F6C7DAF927542B2000DC8027 /* LaunchScreen.storyboard */,
 				F6C7DAFC27542B2000DC8027 /* Info.plist */,
@@ -207,9 +218,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6359D3E27549D8100EB3DEC /* GetRecommendDataService.swift in Sources */,
 				F6C7DAF327542B1E00DC8027 /* ViewController.swift in Sources */,
 				F6C7DAEF27542B1E00DC8027 /* AppDelegate.swift in Sources */,
+				F6359D3C27549B9400EB3DEC /* RecommendCarDataModel.swift in Sources */,
+				F6359D3A275497B500EB3DEC /* GETViewController.swift in Sources */,
 				F6C7DAF127542B1E00DC8027 /* SceneDelegate.swift in Sources */,
+				F6359D38275496F000EB3DEC /* NetworkResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
