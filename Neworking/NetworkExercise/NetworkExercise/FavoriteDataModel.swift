@@ -7,16 +7,16 @@
 
 import Foundation
 
-// MARK: - FavoriteDataModel
-struct FavoriteDataModel: Codable {
+// MARK: - FavoriteResponseData
+struct FavoriteResponseData: Codable {
     let status: Int
     let success: Bool
     let message: String
-    let data: Likes?    // 응답 바디가 실패일 경우를 대비하여 옵셔널로 선언
+    let data: FavoriteResultData?
 }
 
-// MARK: - Likes
-struct Likes: Codable {
+// MARK: - FavoriteResultData
+struct FavoriteResultData: Codable {
     let carID: Int
     let isLiked: Bool
 

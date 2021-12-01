@@ -74,6 +74,6 @@ struct GetRecommendDataService
         // 1. 만들어둔 데이터모델 형태로 해독 먼저 하고,
         guard let decodedData = try? decoder.decode(RecommendCarDataModel.self, from: data) else {return .pathErr}
         // 2. 성공하면 success에 넣어줌
-        return .success(decodedData.data)   // 이제 VC에서 data를 빼서 쓸 수 있다!!
+        return .success(decodedData)   // 이제 VC에서 data를 빼서 쓸 수 있다!!
     }
 }

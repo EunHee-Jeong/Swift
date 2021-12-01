@@ -58,7 +58,7 @@ struct FavoriteDataService {
     
     private func isVaildClickedData(data: Data) -> NetworkResult<Any> {
         let decoder = JSONDecoder()
-        guard let decodedData = try? decoder.decode(FavoriteDataModel.self, from: data) else {return .pathErr}
+        guard let decodedData = try? decoder.decode(FavoriteResultData.self, from: data) else {return .pathErr}
         return .success(decodedData)
     }
 }
