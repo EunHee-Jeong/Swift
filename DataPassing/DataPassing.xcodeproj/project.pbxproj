@@ -15,6 +15,9 @@
 		F6478180275655F9005A8C8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F647817E275655F9005A8C8F /* LaunchScreen.storyboard */; };
 		F6478188275656A1005A8C8F /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6478187275656A1005A8C8F /* FirstVC.swift */; };
 		F647818A275656AB005A8C8F /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6478189275656AA005A8C8F /* SecondVC.swift */; };
+		F66B60CC2757BE2600D1ED6A /* DelegatePracticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66B60CB2757BE2600D1ED6A /* DelegatePracticeVC.swift */; };
+		F66B60CF2757BFD300D1ED6A /* KeywordCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66B60CD2757BFD300D1ED6A /* KeywordCVC.swift */; };
+		F66B60D02757BFD300D1ED6A /* KeywordCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F66B60CE2757BFD300D1ED6A /* KeywordCVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		F6478181275655F9005A8C8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6478187275656A1005A8C8F /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
 		F6478189275656AA005A8C8F /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		F66B60CB2757BE2600D1ED6A /* DelegatePracticeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatePracticeVC.swift; sourceTree = "<group>"; };
+		F66B60CD2757BFD300D1ED6A /* KeywordCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordCVC.swift; sourceTree = "<group>"; };
+		F66B60CE2757BFD300D1ED6A /* KeywordCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeywordCVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 				F6478179275655F7005A8C8F /* Main.storyboard */,
 				F6478187275656A1005A8C8F /* FirstVC.swift */,
 				F6478189275656AA005A8C8F /* SecondVC.swift */,
+				F66B60CB2757BE2600D1ED6A /* DelegatePracticeVC.swift */,
+				F66B60CD2757BFD300D1ED6A /* KeywordCVC.swift */,
+				F66B60CE2757BFD300D1ED6A /* KeywordCVC.xib */,
 				F647817C275655F9005A8C8F /* Assets.xcassets */,
 				F647817E275655F9005A8C8F /* LaunchScreen.storyboard */,
 				F6478181275655F9005A8C8F /* Info.plist */,
@@ -131,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F66B60D02757BFD300D1ED6A /* KeywordCVC.xib in Resources */,
 				F6478180275655F9005A8C8F /* LaunchScreen.storyboard in Resources */,
 				F647817D275655F9005A8C8F /* Assets.xcassets in Resources */,
 				F647817B275655F7005A8C8F /* Main.storyboard in Resources */,
@@ -146,8 +156,10 @@
 			files = (
 				F6478178275655F7005A8C8F /* ViewController.swift in Sources */,
 				F647818A275656AB005A8C8F /* SecondVC.swift in Sources */,
+				F66B60CC2757BE2600D1ED6A /* DelegatePracticeVC.swift in Sources */,
 				F6478188275656A1005A8C8F /* FirstVC.swift in Sources */,
 				F6478174275655F7005A8C8F /* AppDelegate.swift in Sources */,
+				F66B60CF2757BFD300D1ED6A /* KeywordCVC.swift in Sources */,
 				F6478176275655F7005A8C8F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
