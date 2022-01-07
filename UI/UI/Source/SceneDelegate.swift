@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)    // window == 기본 화면
         window?.windowScene = windowScene
-        window?.rootViewController = SnapKitPracticeVC(nibName: nil, bundle: nil) // 루트 뷰컨 지정.
+        window?.rootViewController = SnapKitVC(nibName: nil, bundle: nil) // 루트 뷰컨 지정.
         window?.makeKeyAndVisible() // 화면에서 키보드 입력 받을 수 있게 함
     }
 
