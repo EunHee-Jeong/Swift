@@ -49,7 +49,10 @@ class MainViewController: UIViewController {
                 switch status {
                 case .authorized:
                     print("사용자가 허용함")
-                    self.requestCollection()
+                    OperationQueue.main.addOperation {
+                        // reload 된 데이터가 메인 스레드에서만 동작할 수 있도록 함
+                        self.photoListTableView.reloadData()
+                    }
                 case .denied:
                     print("사용자가 불허함")
                 case .limited, .restricted:
