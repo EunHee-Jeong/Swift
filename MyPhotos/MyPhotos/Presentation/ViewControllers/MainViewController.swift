@@ -12,9 +12,9 @@ import Photos
 class MainViewController: UIViewController {
     
     // MARK: - Properties
-    var fetchResult: PHFetchResult<PHAsset>!    // 결과 (가져온 사진(에셋)) 담음
-    let imageManager: PHCachingImageManager = PHCachingImageManager()   // 결과를 로드
-    let cellIdentifier: String = "cell"
+    private var fetchResult: PHFetchResult<PHAsset>!    // 결과 (가져온 사진(에셋)) 담음
+    private let imageManager: PHCachingImageManager = PHCachingImageManager()   // 결과를 로드
+    private let cellIdentifier: String = "cell"
     
     // MARK: - @IBOutlet Properties
     @IBOutlet weak var photoListTableView: UITableView!
@@ -23,11 +23,16 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        assignDelegation()
         checkAuthorization()
         requestCollection()
     }
 
     // MARK: - Functions
+    private func assignDelegation() {
+        photoListTableView.dataSource = self
+    }
+    
     private func checkAuthorization() {
         // 뷰가 로드되면, (viewDidLoad)
         // 사용자가 사진을 허가했는지 확인해야 한다.
