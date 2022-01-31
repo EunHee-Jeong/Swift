@@ -26,11 +26,13 @@ class MainViewController: UIViewController {
         assignDelegation()
         checkAuthorization()
         requestCollection()
+        catchChange()
     }
 
     // MARK: - Functions
     private func assignDelegation() {
         photoListTableView.dataSource = self
+        photoListTableView.delegate = self
     }
     
     private func checkAuthorization() {
@@ -84,10 +86,30 @@ class MainViewController: UIViewController {
         fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
         self.fetchResult = PHAsset.fetchAssets(in: cameraRollCollection, options: fetchOptions)
     }
+    
+    private func catchChange() {
+        // Observer 등록.
+        // (사진첩에 변화가 생길 때마다 딜리게이트의 photoLibraryDidChange() 메서드 호출)
+        PHPhotoLibrary.shared().register(self)
+    }
 }
 
 // MARK: - Extensions
-extension MainViewController: UITableViewDelegate { }
+extension MainViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        // canEditRowAt ➜ cell 편집할 수 있게 하기 위한 설정
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let asset: PHAsset = self.fetchResult[indexPath.row]
+            PHPhotoLibrary.shared().performChanges({
+                PHAssetChangeRequest.deleteAssets([asset] as NSArray)
+            }, completionHandler: nil)
+        }
+    }
+}
 
 extension MainViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -105,5 +127,19 @@ extension MainViewController: UITableViewDataSource {
             cell.imageView?.image = image
         })
         return cell
+    }
+}
+
+extension MainViewController: PHPhotoLibraryChangeObserver {
+    // PHPhotoLibraryChangeObserver ➜ 라이브러리에 생긴 변화를 감지하는 Observer
+    
+    func photoLibraryDidChange(_ changeInstance: PHChange) {
+        // 포토라이브러리가 바뀌면 호출되는 메서드
+        guard let changes = changeInstance.changeDetails(for: fetchResult) else { return }
+        fetchResult = changes.fetchResultAfterChanges   // 변화가 있으면
+        OperationQueue.main.addOperation {
+            // 테이블 뷰 다시 불러옴
+            self.photoListTableView.reloadSections(IndexSet(0...0), with: .automatic)
+        }
     }
 }
