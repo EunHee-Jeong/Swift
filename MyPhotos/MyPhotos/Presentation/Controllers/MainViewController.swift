@@ -28,6 +28,14 @@ class MainViewController: UIViewController {
         requestCollection()
         catchChange()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // 화면 전환과 데이터 전달
+        guard let nextVC: ImageZoomViewController = segue.destination as? ImageZoomViewController else { return }
+        guard let cell: UITableViewCell = sender as? UITableViewCell else { return }
+        guard let index: IndexPath = self.photoListTableView.indexPath(for: cell) else { return }
+        nextVC.asset = self.fetchResult[index.row]
+    }
 
     // MARK: - Functions
     private func assignDelegation() {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6200B5627A98FAE00D80AB4 /* ImageZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6200B5527A98FAE00D80AB4 /* ImageZoomViewController.swift */; };
 		F66BA35F27A4240000DDBC6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66BA35E27A4240000DDBC6F /* AppDelegate.swift */; };
 		F66BA36127A4240000DDBC6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66BA36027A4240000DDBC6F /* SceneDelegate.swift */; };
 		F66BA36827A4240200DDBC6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F66BA36727A4240200DDBC6F /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F6200B5527A98FAE00D80AB4 /* ImageZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageZoomViewController.swift; sourceTree = "<group>"; };
 		F66BA35B27A4240000DDBC6F /* MyPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66BA35E27A4240000DDBC6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F66BA36027A4240000DDBC6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				F66BA37B27A4D88500DDBC6F /* MainViewController.swift */,
 				F66BA38327A94DBA00DDBC6F /* AsyncViewController.swift */,
+				F6200B5527A98FAE00D80AB4 /* ImageZoomViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			files = (
 				F66BA37C27A4D88500DDBC6F /* MainViewController.swift in Sources */,
 				F66BA38427A94DBA00DDBC6F /* AsyncViewController.swift in Sources */,
+				F6200B5627A98FAE00D80AB4 /* ImageZoomViewController.swift in Sources */,
 				F66BA35F27A4240000DDBC6F /* AppDelegate.swift in Sources */,
 				F66BA36127A4240000DDBC6F /* SceneDelegate.swift in Sources */,
 			);
