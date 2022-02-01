@@ -80,27 +80,27 @@
 		F66BA37327A4246700DDBC6F /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				F66BA37427A4247A00DDBC6F /* ViewModels */,
+				F66BA37427A4247A00DDBC6F /* Models */,
 				F66BA37627A424ED00DDBC6F /* Views */,
-				F66BA37527A4248500DDBC6F /* ViewControllers */,
+				F66BA37527A4248500DDBC6F /* Controllers */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
 		};
-		F66BA37427A4247A00DDBC6F /* ViewModels */ = {
+		F66BA37427A4247A00DDBC6F /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = ViewModels;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		F66BA37527A4248500DDBC6F /* ViewControllers */ = {
+		F66BA37527A4248500DDBC6F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				F66BA37B27A4D88500DDBC6F /* MainViewController.swift */,
 				F66BA38327A94DBA00DDBC6F /* AsyncViewController.swift */,
 			);
-			path = ViewControllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		F66BA37627A424ED00DDBC6F /* Views */ = {
