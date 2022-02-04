@@ -8,32 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		40BB019F3A6A47D42B9F004B /* Pods_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DCDD8FFD044484F61E4C25 /* Pods_UI.framework */; };
-		F689455A27869E3F00F22187 /* SnapKitPracticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F689455927869E3E00F22187 /* SnapKitPracticeVC.swift */; };
+		F60501EA27ACB2320010DEC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60501E927ACB2320010DEC8 /* ViewController.swift */; };
 		F692767327846BBA0004071F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692767227846BBA0004071F /* AppDelegate.swift */; };
 		F692767527846BBA0004071F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692767427846BBA0004071F /* SceneDelegate.swift */; };
-		F692767727846BBA0004071F /* NSConstraintVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692767627846BBA0004071F /* NSConstraintVC.swift */; };
 		F692767C27846BBC0004071F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F692767B27846BBC0004071F /* Assets.xcassets */; };
 		F692767F27846BBC0004071F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F692767D27846BBC0004071F /* LaunchScreen.storyboard */; };
 		F693C7B52785EDA700F773CA /* CutstomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F693C7B42785EDA700F773CA /* CutstomNavigationBar.swift */; };
 		F693C7B72785EDB900F773CA /* CustomNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = F693C7B62785EDB900F773CA /* CustomNavigationBar.xib */; };
-		F693C7B927868B6E00F773CA /* SnapKitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F693C7B827868B6E00F773CA /* SnapKitVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		27DCDD8FFD044484F61E4C25 /* Pods_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CF90A37BD351CE862CE153 /* Pods-UI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI.release.xcconfig"; path = "Target Support Files/Pods-UI/Pods-UI.release.xcconfig"; sourceTree = "<group>"; };
 		D7FFE8E09ECC2C4782811592 /* Pods-UI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI.debug.xcconfig"; path = "Target Support Files/Pods-UI/Pods-UI.debug.xcconfig"; sourceTree = "<group>"; };
-		F689455927869E3E00F22187 /* SnapKitPracticeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitPracticeVC.swift; sourceTree = "<group>"; };
-		F689455B27869F8C00F22187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F60501E927ACB2320010DEC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F689455B27869F8C00F22187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F692766F27846BBA0004071F /* UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F692767227846BBA0004071F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F692767427846BBA0004071F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F692767627846BBA0004071F /* NSConstraintVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSConstraintVC.swift; sourceTree = "<group>"; };
 		F692767B27846BBC0004071F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F692767E27846BBC0004071F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F693C7B42785EDA700F773CA /* CutstomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutstomNavigationBar.swift; sourceTree = "<group>"; };
 		F693C7B62785EDB900F773CA /* CustomNavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNavigationBar.xib; sourceTree = "<group>"; };
-		F693C7B827868B6E00F773CA /* SnapKitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapKitVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +50,32 @@
 				27DCDD8FFD044484F61E4C25 /* Pods_UI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F60501E627ACB1880010DEC8 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F693C7B32785ED8400F773CA /* Views */,
+				F692768827846BFA0004071F /* Controllers */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F60501E727ACB19D0010DEC8 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F692767D27846BBC0004071F /* LaunchScreen.storyboard */,
+				F692767B27846BBC0004071F /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F60501E827ACB1AF0010DEC8 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				F689455B27869F8C00F22187 /* Info.plist */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 		F63591886C223D1E5633448D /* Pods */ = {
@@ -86,58 +108,38 @@
 		F692767127846BBA0004071F /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				F692768627846BC90004071F /* Resource */,
-				F692768727846BEA0004071F /* Source */,
+				F692768627846BC90004071F /* Application */,
+				F60501E627ACB1880010DEC8 /* Presentation */,
+				F60501E727ACB19D0010DEC8 /* Resource */,
+				F60501E827ACB1AF0010DEC8 /* Support */,
 			);
 			path = UI;
 			sourceTree = "<group>";
 		};
-		F692768627846BC90004071F /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				F689455B27869F8C00F22187 /* Info.plist */,
-				F692767B27846BBC0004071F /* Assets.xcassets */,
-				F692768927846C0C0004071F /* Storyboard */,
-			);
-			path = Resource;
-			sourceTree = "<group>";
-		};
-		F692768727846BEA0004071F /* Source */ = {
+		F692768627846BC90004071F /* Application */ = {
 			isa = PBXGroup;
 			children = (
 				F692767227846BBA0004071F /* AppDelegate.swift */,
 				F692767427846BBA0004071F /* SceneDelegate.swift */,
-				F692768827846BFA0004071F /* ViewController */,
-				F693C7B32785ED8400F773CA /* View */,
 			);
-			path = Source;
+			path = Application;
 			sourceTree = "<group>";
 		};
-		F692768827846BFA0004071F /* ViewController */ = {
+		F692768827846BFA0004071F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F692767627846BBA0004071F /* NSConstraintVC.swift */,
-				F693C7B827868B6E00F773CA /* SnapKitVC.swift */,
-				F689455927869E3E00F22187 /* SnapKitPracticeVC.swift */,
+				F60501E927ACB2320010DEC8 /* ViewController.swift */,
 			);
-			path = ViewController;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		F692768927846C0C0004071F /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				F692767D27846BBC0004071F /* LaunchScreen.storyboard */,
-			);
-			path = Storyboard;
-			sourceTree = "<group>";
-		};
-		F693C7B32785ED8400F773CA /* View */ = {
+		F693C7B32785ED8400F773CA /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				F693C7B62785EDB900F773CA /* CustomNavigationBar.xib */,
 				F693C7B42785EDA700F773CA /* CutstomNavigationBar.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,11 +257,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F693C7B927868B6E00F773CA /* SnapKitVC.swift in Sources */,
-				F692767727846BBA0004071F /* NSConstraintVC.swift in Sources */,
 				F693C7B52785EDA700F773CA /* CutstomNavigationBar.swift in Sources */,
 				F692767327846BBA0004071F /* AppDelegate.swift in Sources */,
-				F689455A27869E3F00F22187 /* SnapKitPracticeVC.swift in Sources */,
+				F60501EA27ACB2320010DEC8 /* ViewController.swift in Sources */,
 				F692767527846BBA0004071F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,7 +404,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RS46GZF8TU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UI/Resource/Info.plist;
+				INFOPLIST_FILE = UI/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -432,7 +432,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RS46GZF8TU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UI/Resource/Info.plist;
+				INFOPLIST_FILE = UI/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
