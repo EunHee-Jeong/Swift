@@ -27,6 +27,7 @@ final class ViewController: BaseViewController {
 
     // MARK: - Functions
     override func layout() {
+        super.layout()
         
         [redButton, blueButton, greenButton, pinkButton].forEach {
             view.addSubview($0)
@@ -74,6 +75,8 @@ final class ViewController: BaseViewController {
     }
     
     override func style() {
+        super.style()
+        
         [redButton, blueButton, greenButton, pinkButton].forEach {
             $0.setTitleColor(.white, for: .normal)
         }
