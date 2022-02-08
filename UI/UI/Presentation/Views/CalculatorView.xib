@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CaculatorViewController" customModule="UI" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="xXU-14-bzU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ziE-wx-7eV">
+                    <rect key="frame" x="0.0" y="44" width="375" height="300"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jm3-5H-6Ry">
+                            <rect key="frame" x="20" y="200" width="335" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="lsI-lq-8rx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Jm3-5H-6Ry" secondAttribute="bottom" id="91f-Wp-zZ4"/>
+                        <constraint firstAttribute="height" constant="300" id="PD7-1x-wOa"/>
+                        <constraint firstItem="Jm3-5H-6Ry" firstAttribute="leading" secondItem="ziE-wx-7eV" secondAttribute="leading" constant="20" id="ybG-Wg-VLL"/>
+                        <constraint firstAttribute="trailing" secondItem="Jm3-5H-6Ry" secondAttribute="trailing" constant="20" id="zSr-O7-Q8N"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="t9i-3i-SEt">
+                    <rect key="frame" x="22" y="344" width="245" height="75"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWG-lu-VCq" customClass="RoundButton" customModule="UI" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="lWG-lu-VCq" secondAttribute="height" multiplier="1:1" id="li7-Xz-TJw"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="AC">
+                                <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruj-YM-S18" customClass="RoundButton" customModule="UI" customModuleProvider="target">
+                            <rect key="frame" x="85" y="0.0" width="75" height="75"/>
+                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="ruj-YM-S18" secondAttribute="height" multiplier="1:1" id="kzu-2h-pyA"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="+/-">
+                                <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocs-xx-aGo" customClass="RoundButton" customModule="UI" customModuleProvider="target">
+                            <rect key="frame" x="170" y="0.0" width="75" height="75"/>
+                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Ocs-xx-aGo" secondAttribute="height" multiplier="1:1" id="dLe-Zo-tCu"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="%">
+                                <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="245" id="nli-aW-mSX"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tak-gE-omz">
+                    <rect key="frame" x="277" y="344" width="76" height="415"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybu-3e-ZUw" customClass="RoundButton" customModule="UI" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="76" height="75"/>
+                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="N8J-Y1-nUt"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="÷">
+                                <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwF-cf-tiu" customClass="RoundButton" customModule="UI" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="85" width="76" height="75"/>
+                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="×">
+                                <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pk-ts-Pov" customClass="RoundButton" customModule="UI" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="170" width="76" height="75"/>
+                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="-">
+                                <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypc-IS-LEZ" customClass="RoundButton" customModule="UI" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="255" width="76" height="75"/>
+                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="+">
+                                <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbS-Ox-1Mj" customClass="RoundButton" customModule="UI" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="340" width="76" height="75"/>
+                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="=">
+                                <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="n0f-Md-IjT">
+                    <rect key="frame" x="22" y="429" width="245" height="330"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TpO-nm-Fxt">
+                            <rect key="frame" x="0.0" y="0.0" width="245" height="75"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9B-Vu-tb6" customClass="RoundButton" customModule="UI" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="d9B-Vu-tb6" secondAttribute="height" multiplier="1:1" id="61E-U0-uDC"/>
+                                    </constraints>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="7">
+                                        <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Let-px-C1K" customClass="RoundButton" customModule="UI" customModuleProvider="target">
+                                    <rect key="frame" x="85" y="0.0" width="75" height="75"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="8">
+                                        <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1n-WS-H1E" customClass="RoundButton" customModule="UI" customModuleProvider="target">
+                                    <rect key="frame" x="170" y="0.0" width="75" height="75"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="Q1n-WS-H1E" secondAttribute="height" multiplier="1:1" id="WcE-e3-tqL"/>
+                                    </constraints>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="9">
+                                        <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="245" id="qrn-dD-aIY"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="6UL-cC-CrP">
+                            <rect key="frame" x="0.0" y="85" width="245" height="75"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogy-g0-Vs0" customClass="RoundButton" customModule="UI" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="75.666666666666671" height="75"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="4">
+                                        <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynf-sM-mqT" customClass="RoundButton" customModule="UI" customModuleProvider="target">
+                                    <rect key="frame" x="84.666666666666657" y="0.0" width="75.666666666666657" height="75"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="5">
+                                        <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajg-P0-0eC" customClass="RoundButton" customModule="UI" customModuleProvider="target">
+                                    <rect key="frame" x="169.33333333333334" y="0.0" width="75.666666666666657" height="75"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="6">
+                                        <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="245" id="WK1-32-tFC"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nRt-Fv-NAp">
+                            <rect key="frame" x="0.0" y="170" width="245" height="75"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVy-B9-Wut" customClass="RoundButton" customModule="UI" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="76.333333333333329" height="75"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="1">
+                                        <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMy-cN-PU4" customClass="RoundButton" customModule="UI" customModuleProvider="target">
+                                    <rect key="frame" x="84.333333333333343" y="0.0" width="76.333333333333343" height="75"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="2">
+                                        <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUN-Sy-OGb" customClass="RoundButton" customModule="UI" customModuleProvider="target">
+                                    <rect key="frame" x="168.66666666666666" y="0.0" width="76.333333333333343" height="75"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="3">
+                                        <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="245" id="DCg-mR-zUh"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fYt-yM-yQW">
+                            <rect key="frame" x="0.0" y="255" width="245" height="75"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfX-Js-St9" customClass="RoundButton" customModule="UI" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="160" height="75"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="0">
+                                        <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mqg-7j-3ge" customClass="RoundButton" customModule="UI" customModuleProvider="target">
+                                    <rect key="frame" x="170" y="0.0" width="75" height="75"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title=".">
+                                        <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Mqg-7j-3ge" firstAttribute="width" secondItem="Mqg-7j-3ge" secondAttribute="height" multiplier="1:1" id="0OL-Y2-avY"/>
+                                <constraint firstAttribute="width" constant="245" id="BDI-vS-qba"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ziE-wx-7eV" secondAttribute="trailing" id="91l-ro-abH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tak-gE-omz" secondAttribute="trailing" constant="22" id="9kf-RZ-Ll6"/>
+                <constraint firstItem="tak-gE-omz" firstAttribute="leading" secondItem="t9i-3i-SEt" secondAttribute="trailing" constant="10" id="HaJ-5D-auS"/>
+                <constraint firstItem="tak-gE-omz" firstAttribute="top" secondItem="ziE-wx-7eV" secondAttribute="bottom" id="Ida-ME-5cp"/>
+                <constraint firstItem="t9i-3i-SEt" firstAttribute="top" secondItem="ziE-wx-7eV" secondAttribute="bottom" id="KIf-mb-WrO"/>
+                <constraint firstItem="ziE-wx-7eV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Yb9-GF-UTK"/>
+                <constraint firstItem="ziE-wx-7eV" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ewI-DY-vfR"/>
+                <constraint firstItem="t9i-3i-SEt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="22" id="rk3-o0-3jS"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="65"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="8pk-ts-Pov">
+            <size key="intrinsicContentSize" width="35" height="44"/>
+        </designable>
+        <designable name="Let-px-C1K">
+            <size key="intrinsicContentSize" width="35.666666666666664" height="37"/>
+        </designable>
+        <designable name="MUN-Sy-OGb">
+            <size key="intrinsicContentSize" width="35.666666666666664" height="37"/>
+        </designable>
+        <designable name="Mqg-7j-3ge">
+            <size key="intrinsicContentSize" width="29.333333333333332" height="37"/>
+        </designable>
+        <designable name="Ocs-xx-aGo">
+            <size key="intrinsicContentSize" width="41" height="37"/>
+        </designable>
+        <designable name="Ogy-g0-Vs0">
+            <size key="intrinsicContentSize" width="36" height="37"/>
+        </designable>
+        <designable name="PVy-B9-Wut">
+            <size key="intrinsicContentSize" width="32.333333333333336" height="37"/>
+        </designable>
+        <designable name="Q1n-WS-H1E">
+            <size key="intrinsicContentSize" width="35.666666666666664" height="37"/>
+        </designable>
+        <designable name="ajg-P0-0eC">
+            <size key="intrinsicContentSize" width="35.666666666666664" height="37"/>
+        </designable>
+        <designable name="bbS-Ox-1Mj">
+            <size key="intrinsicContentSize" width="39.333333333333336" height="44"/>
+        </designable>
+        <designable name="d9B-Vu-tb6">
+            <size key="intrinsicContentSize" width="34.333333333333336" height="37"/>
+        </designable>
+        <designable name="kwF-cf-tiu">
+            <size key="intrinsicContentSize" width="39.333333333333336" height="44"/>
+        </designable>
+        <designable name="lMy-cN-PU4">
+            <size key="intrinsicContentSize" width="35" height="37"/>
+        </designable>
+        <designable name="lWG-lu-VCq">
+            <size key="intrinsicContentSize" width="49" height="37"/>
+        </designable>
+        <designable name="ruj-YM-S18">
+            <size key="intrinsicContentSize" width="49.333333333333336" height="37"/>
+        </designable>
+        <designable name="tfX-Js-St9">
+            <size key="intrinsicContentSize" width="35.666666666666664" height="37"/>
+        </designable>
+        <designable name="ybu-3e-ZUw">
+            <size key="intrinsicContentSize" width="39.333333333333336" height="44"/>
+        </designable>
+        <designable name="ynf-sM-mqT">
+            <size key="intrinsicContentSize" width="35.333333333333336" height="37"/>
+        </designable>
+        <designable name="ypc-IS-LEZ">
+            <size key="intrinsicContentSize" width="39.333333333333336" height="44"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
