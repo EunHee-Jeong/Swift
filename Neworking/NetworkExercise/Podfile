@@ -7,5 +7,6 @@ target 'NetworkExercise' do
 
   # Pods for NetworkExercise
   pod 'Alamofire', '~> 5.2'
+  pod 'Moya'
 
 end
