@@ -9,16 +9,16 @@
 
 import Foundation
 
-// MARK: - RecommendCarDataModel
-struct RecommendCarDataModel: Codable {
+// MARK: - RecommendResponseData
+struct RecommendResponseData: Codable {
     let status: Int
     let success: Bool
     let message: String
-    let data: [RecommendCars]
+    let data: [RecommendResultData]?
 }
 
-// MARK: - RecommendCars
-struct RecommendCars: Codable {
+// MARK: - RecommendResultData
+struct RecommendResultData: Codable {
     let carName, priceUnit: String
     let price, discountRate: Int
     let imageURL: String
@@ -26,6 +26,5 @@ struct RecommendCars: Codable {
     enum CodingKeys: String, CodingKey {
         case carName, priceUnit, price, discountRate
         case imageURL = "imageUrl"
-        // imageUrl 대신 imageURL로 작성할 것이라는 소리...!
     }
 }
