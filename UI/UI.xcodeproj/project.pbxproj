@@ -13,7 +13,6 @@
 		F60501F427AD32CE0010DEC8 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60501F327AD32CE0010DEC8 /* String+Extension.swift */; };
 		F60501F627AD33480010DEC8 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60501F527AD33480010DEC8 /* UIStackView+Extension.swift */; };
 		F60501F827AD33E10010DEC8 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60501F727AD33E10010DEC8 /* UITextField+Extension.swift */; };
-		F605020027AE2DE20010DEC8 /* CalculatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F60501FF27AE2DE20010DEC8 /* CalculatorView.xib */; };
 		F605020327AE31A20010DEC8 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F605020227AE31A20010DEC8 /* RoundButton.swift */; };
 		F692767327846BBA0004071F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692767227846BBA0004071F /* AppDelegate.swift */; };
 		F692767527846BBA0004071F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692767427846BBA0004071F /* SceneDelegate.swift */; };
@@ -32,7 +31,6 @@
 		F60501F327AD32CE0010DEC8 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		F60501F527AD33480010DEC8 /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 		F60501F727AD33E10010DEC8 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
-		F60501FF27AE2DE20010DEC8 /* CalculatorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatorView.xib; sourceTree = "<group>"; };
 		F605020227AE31A20010DEC8 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		F689455B27869F8C00F22187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F692766F27846BBA0004071F /* UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,7 +185,6 @@
 			children = (
 				F693C7B62785EDB900F773CA /* CustomNavigationBar.xib */,
 				F693C7B42785EDA700F773CA /* CutstomNavigationBar.swift */,
-				F60501FF27AE2DE20010DEC8 /* CalculatorView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -252,7 +249,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F605020027AE2DE20010DEC8 /* CalculatorView.xib in Resources */,
 				F692767F27846BBC0004071F /* LaunchScreen.storyboard in Resources */,
 				F693C7B72785EDB900F773CA /* CustomNavigationBar.xib in Resources */,
 				F692767C27846BBC0004071F /* Assets.xcassets in Resources */,
