@@ -14,6 +14,11 @@
 		F60501F627AD33480010DEC8 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60501F527AD33480010DEC8 /* UIStackView+Extension.swift */; };
 		F60501F827AD33E10010DEC8 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60501F727AD33E10010DEC8 /* UITextField+Extension.swift */; };
 		F605020327AE31A20010DEC8 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F605020227AE31A20010DEC8 /* RoundButton.swift */; };
+		F605022E27B63B390010DEC8 /* DynamicSizingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F605022D27B63B390010DEC8 /* DynamicSizingModel.swift */; };
+		F605023427B63D750010DEC8 /* DynamicSizingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F605023227B63D750010DEC8 /* DynamicSizingTableViewCell.swift */; };
+		F605023527B63D750010DEC8 /* DynamicSizingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F605023327B63D750010DEC8 /* DynamicSizingTableViewCell.xib */; };
+		F605023827B6417B0010DEC8 /* DynamicSizingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F605023627B6417B0010DEC8 /* DynamicSizingViewController.swift */; };
+		F605023927B6417B0010DEC8 /* DynamicSizingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F605023727B6417B0010DEC8 /* DynamicSizingViewController.xib */; };
 		F692767327846BBA0004071F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692767227846BBA0004071F /* AppDelegate.swift */; };
 		F692767527846BBA0004071F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692767427846BBA0004071F /* SceneDelegate.swift */; };
 		F692767C27846BBC0004071F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F692767B27846BBC0004071F /* Assets.xcassets */; };
@@ -32,6 +37,11 @@
 		F60501F527AD33480010DEC8 /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 		F60501F727AD33E10010DEC8 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		F605020227AE31A20010DEC8 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		F605022D27B63B390010DEC8 /* DynamicSizingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicSizingModel.swift; sourceTree = "<group>"; };
+		F605023227B63D750010DEC8 /* DynamicSizingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicSizingTableViewCell.swift; sourceTree = "<group>"; };
+		F605023327B63D750010DEC8 /* DynamicSizingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicSizingTableViewCell.xib; sourceTree = "<group>"; };
+		F605023627B6417B0010DEC8 /* DynamicSizingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicSizingViewController.swift; sourceTree = "<group>"; };
+		F605023727B6417B0010DEC8 /* DynamicSizingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicSizingViewController.xib; sourceTree = "<group>"; };
 		F689455B27869F8C00F22187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F692766F27846BBA0004071F /* UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F692767227846BBA0004071F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +75,7 @@
 		F60501E627ACB1880010DEC8 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F605022C27B63B2E0010DEC8 /* Models */,
 				F693C7B32785ED8400F773CA /* Views */,
 				F692768827846BFA0004071F /* Controllers */,
 			);
@@ -123,6 +134,14 @@
 			path = DesignSystem;
 			sourceTree = "<group>";
 		};
+		F605022C27B63B2E0010DEC8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F605022D27B63B390010DEC8 /* DynamicSizingModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		F63591886C223D1E5633448D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +195,8 @@
 			children = (
 				F60501EC27ACB2DD0010DEC8 /* Common */,
 				F60501E927ACB2320010DEC8 /* ViewController.swift */,
+				F605023627B6417B0010DEC8 /* DynamicSizingViewController.swift */,
+				F605023727B6417B0010DEC8 /* DynamicSizingViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -185,6 +206,8 @@
 			children = (
 				F693C7B62785EDB900F773CA /* CustomNavigationBar.xib */,
 				F693C7B42785EDA700F773CA /* CutstomNavigationBar.swift */,
+				F605023227B63D750010DEC8 /* DynamicSizingTableViewCell.swift */,
+				F605023327B63D750010DEC8 /* DynamicSizingTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -249,7 +272,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F605023527B63D750010DEC8 /* DynamicSizingTableViewCell.xib in Resources */,
 				F692767F27846BBC0004071F /* LaunchScreen.storyboard in Resources */,
+				F605023927B6417B0010DEC8 /* DynamicSizingViewController.xib in Resources */,
 				F693C7B72785EDB900F773CA /* CustomNavigationBar.xib in Resources */,
 				F692767C27846BBC0004071F /* Assets.xcassets in Resources */,
 			);
@@ -304,14 +329,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F605023427B63D750010DEC8 /* DynamicSizingTableViewCell.swift in Sources */,
 				F60501F827AD33E10010DEC8 /* UITextField+Extension.swift in Sources */,
 				F60501EE27ACB2E50010DEC8 /* BaseViewController.swift in Sources */,
 				F60501F427AD32CE0010DEC8 /* String+Extension.swift in Sources */,
 				F605020327AE31A20010DEC8 /* RoundButton.swift in Sources */,
 				F693C7B52785EDA700F773CA /* CutstomNavigationBar.swift in Sources */,
+				F605022E27B63B390010DEC8 /* DynamicSizingModel.swift in Sources */,
 				F692767327846BBA0004071F /* AppDelegate.swift in Sources */,
 				F60501F627AD33480010DEC8 /* UIStackView+Extension.swift in Sources */,
 				F60501EA27ACB2320010DEC8 /* ViewController.swift in Sources */,
+				F605023827B6417B0010DEC8 /* DynamicSizingViewController.swift in Sources */,
 				F692767527846BBA0004071F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
