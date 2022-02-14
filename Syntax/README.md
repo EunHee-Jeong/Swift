@@ -4,7 +4,7 @@
 | :--: | :----------: |
 | Basic 1 | [☃️](https://github.com/EunHee-Jeong/iOS-Labs/blob/51b15e02b9b4a95a1b4d9f17798dd470bca19d1d/Syntax/%EC%BD%98%EC%86%94%EB%A1%9C%EA%B7%B8,%20%EC%83%81%EC%88%98%EC%99%80%20%EB%B3%80%EC%88%98,%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%ED%83%80%EC%9E%85,%20%ED%95%A8%EC%88%98.md) |
 | Basic 2 | [☃️](https://github.com/EunHee-Jeong/iOS-Labs/blob/965db3acfbb654032b9737d40d546df555f4d08c/Syntax/%EC%A1%B0%EA%B1%B4%EB%AC%B8,%20%EB%B0%98%EB%B3%B5%EB%AC%B8,%20%EC%97%B4%EA%B1%B0%ED%98%95,%20%EC%98%B5%EC%85%94%EB%84%90.md) |
-| Basic 3 | - |
+| Basic 3 | [☃️](https://github.com/EunHee-Jeong/iOS-Labs/blob/a7fe138b395390186e2bff37c3b7a3868b115311/Syntax/%EA%B5%AC%EC%A1%B0%EC%B2%B4vs%ED%81%B4%EB%9E%98%EC%8A%A4.md) |
 | Basic 4 | - |
 
 | 활용 |   리드미   |
