@@ -1,6 +1,0 @@
-framework module Pods_NetworkExercise {
-  umbrella header "Pods-NetworkExercise-umbrella.h"
-
-  export *
-  module * { export * }
-}

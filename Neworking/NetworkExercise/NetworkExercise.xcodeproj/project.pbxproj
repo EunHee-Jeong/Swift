@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E8AC6EC889B7F2309DA8A9C /* Pods_NetworkExercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71636CB519E59FC512C14F75 /* Pods_NetworkExercise.framework */; };
 		F6359D38275496F000EB3DEC /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6359D37275496F000EB3DEC /* NetworkResult.swift */; };
 		F6359D3A275497B500EB3DEC /* GETViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6359D39275497B500EB3DEC /* GETViewController.swift */; };
 		F6359D3C27549B9400EB3DEC /* RecommendCarDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6359D3B27549B9400EB3DEC /* RecommendCarDataModel.swift */; };
@@ -16,6 +15,7 @@
 		F6359D4227551B7200EB3DEC /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6359D4127551B7200EB3DEC /* APIConstants.swift */; };
 		F6359D4427551D9C00EB3DEC /* FavoriteDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6359D4327551D9B00EB3DEC /* FavoriteDataModel.swift */; };
 		F6359D4627551F1100EB3DEC /* PUTFavoriteDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6359D4527551F1100EB3DEC /* PUTFavoriteDataService.swift */; };
+		F635EEB627D0F76B009B9246 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F635EEB527D0F76B009B9246 /* Alamofire */; };
 		F6C7DAEF27542B1E00DC8027 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C7DAEE27542B1E00DC8027 /* AppDelegate.swift */; };
 		F6C7DAF127542B1E00DC8027 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C7DAF027542B1E00DC8027 /* SceneDelegate.swift */; };
 		F6C7DAF327542B1E00DC8027 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C7DAF227542B1E00DC8027 /* ViewController.swift */; };
@@ -25,9 +25,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		02551A9439392D93566C4D25 /* Pods-NetworkExercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkExercise.release.xcconfig"; path = "Target Support Files/Pods-NetworkExercise/Pods-NetworkExercise.release.xcconfig"; sourceTree = "<group>"; };
-		17E3AE1565F0DB9599984FB1 /* Pods-NetworkExercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkExercise.debug.xcconfig"; path = "Target Support Files/Pods-NetworkExercise/Pods-NetworkExercise.debug.xcconfig"; sourceTree = "<group>"; };
-		71636CB519E59FC512C14F75 /* Pods_NetworkExercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkExercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6359D37275496F000EB3DEC /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		F6359D39275497B500EB3DEC /* GETViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GETViewController.swift; sourceTree = "<group>"; };
 		F6359D3B27549B9400EB3DEC /* RecommendCarDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCarDataModel.swift; sourceTree = "<group>"; };
@@ -51,30 +48,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E8AC6EC889B7F2309DA8A9C /* Pods_NetworkExercise.framework in Frameworks */,
+				F635EEB627D0F76B009B9246 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8CDEAF8A2E5BA87100E60315 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				17E3AE1565F0DB9599984FB1 /* Pods-NetworkExercise.debug.xcconfig */,
-				02551A9439392D93566C4D25 /* Pods-NetworkExercise.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		A17EC4A03EFCCD361F89F069 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				71636CB519E59FC512C14F75 /* Pods_NetworkExercise.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		F605020427B213140010DEC8 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,8 +164,6 @@
 			children = (
 				F6C7DAED27542B1E00DC8027 /* NetworkExercise */,
 				F6C7DAEC27542B1E00DC8027 /* Products */,
-				8CDEAF8A2E5BA87100E60315 /* Pods */,
-				A17EC4A03EFCCD361F89F069 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -218,17 +196,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6C7DAFF27542B2000DC8027 /* Build configuration list for PBXNativeTarget "NetworkExercise" */;
 			buildPhases = (
-				EA2EC220E665F870EECDE9F0 /* [CP] Check Pods Manifest.lock */,
 				F6C7DAE727542B1E00DC8027 /* Sources */,
 				F6C7DAE827542B1E00DC8027 /* Frameworks */,
 				F6C7DAE927542B1E00DC8027 /* Resources */,
-				33844C3F1C866A6D3FAD58CA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = NetworkExercise;
+			packageProductDependencies = (
+				F635EEB527D0F76B009B9246 /* Alamofire */,
+			);
 			productName = NetworkExercise;
 			productReference = F6C7DAEB27542B1E00DC8027 /* NetworkExercise.app */;
 			productType = "com.apple.product-type.application";
@@ -257,6 +236,9 @@
 				Base,
 			);
 			mainGroup = F6C7DAE227542B1E00DC8027;
+			packageReferences = (
+				F635EEB427D0F76B009B9246 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = F6C7DAEC27542B1E00DC8027 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -278,48 +260,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		33844C3F1C866A6D3FAD58CA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NetworkExercise/Pods-NetworkExercise-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NetworkExercise/Pods-NetworkExercise-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetworkExercise/Pods-NetworkExercise-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EA2EC220E665F870EECDE9F0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NetworkExercise-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F6C7DAE727542B1E00DC8027 /* Sources */ = {
@@ -480,7 +420,6 @@
 		};
 		F6C7DB0027542B2000DC8027 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17E3AE1565F0DB9599984FB1 /* Pods-NetworkExercise.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -509,7 +448,6 @@
 		};
 		F6C7DB0127542B2000DC8027 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02551A9439392D93566C4D25 /* Pods-NetworkExercise.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -558,6 +496,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F635EEB427D0F76B009B9246 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F635EEB527D0F76B009B9246 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F635EEB427D0F76B009B9246 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F6C7DAE327542B1E00DC8027 /* Project object */;
 }
