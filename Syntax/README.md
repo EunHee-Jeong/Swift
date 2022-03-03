@@ -11,3 +11,4 @@
 | 활용 |   리드미   |
 | :--: | :----------: |
 | 클로저 → 고차함수 | [❄️](https://github.com/EunHee-Jeong/iOS-Labs/blob/a57013eb67b65aba6fd8ab3c43e8bf4ada1479f7/Syntax/%EA%B3%A0%EC%B0%A8%ED%95%A8%EC%88%98.md) |
+| 클로저 → 캡쳐리스트 | [❄️](https://github.com/EunHee-Jeong/iOS-Labs/blob/8ce57ed5892262ee370bfa874c66aa8aa0a65e23/Syntax/%EC%BA%A1%EC%B3%90%EB%A6%AC%EC%8A%A4%ED%8A%B8.md) |
