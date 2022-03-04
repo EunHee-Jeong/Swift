@@ -12,3 +12,4 @@
 | :--: | :----------: |
 | 클로저 → 고차함수 | [❄️](https://github.com/EunHee-Jeong/iOS-Labs/blob/a57013eb67b65aba6fd8ab3c43e8bf4ada1479f7/Syntax/%EA%B3%A0%EC%B0%A8%ED%95%A8%EC%88%98.md) |
 | 클로저 → 캡쳐리스트 | [❄️](https://github.com/EunHee-Jeong/iOS-Labs/blob/8ce57ed5892262ee370bfa874c66aa8aa0a65e23/Syntax/%EC%BA%A1%EC%B3%90%EB%A6%AC%EC%8A%A4%ED%8A%B8.md) |
+| 데이터 타입 고급 → 열거형 | [❄️](https://github.com/EunHee-Jeong/iOS-Labs/blob/0e37e8e6ca4905933cf5cba13caaf7687015ef4c/Syntax/%EC%97%B4%EA%B1%B0%ED%98%95.md) |
