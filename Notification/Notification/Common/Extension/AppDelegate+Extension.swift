@@ -14,10 +14,13 @@ import UserNotifications
  앱이 실행될 때 처음부터 delegate를 등록해주기 위해 AppDelegate에서 구현하는 것이다.
  */
 extension AppDelegate: UNUserNotificationCenterDelegate {
+    // 앱이 foreground 상태에서 알림을 수신했을 때 작동하는 메서드
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler
         completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         completionHandler([.badge, .sound, .banner])
     }
+    
+    // 앱이 runtime 상태에서 알림을 수신했을 때 작동하는 메서드
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         let _ = response.notification.request.content.userInfo  // deep link 처리하려면 와일드카드 이용
         
