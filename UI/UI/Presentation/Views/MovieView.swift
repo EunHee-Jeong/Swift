@@ -21,10 +21,9 @@ final class MovieView: UIView {
         $0.font = .systemFont(ofSize: 30)
         $0.isEditable = false
     }
-    private let contentImageView = UIImageView().then {
-        $0.contentMode = .scaleAspectFit
-        $0.isUserInteractionEnabled = false
-        $0.image = UIImage(named: "movieImage")
+    private let contentButton = AnimationButton().then {
+        $0.isUserInteractionEnabled = true
+        $0.setImage(UIImage(named: "movieImage"), for: .normal)
     }
     private let contentTextView = UITextView().then {
         $0.isEditable = false
@@ -53,10 +52,11 @@ final class MovieView: UIView {
     
     // MARK: - Functions
     private func setUI() {
-        [titleLabel, contentImageView, contentTextView].forEach {
+        [titleLabel, contentButton, contentTextView].forEach {
             addSubview($0)
         }
         self.backgroundColor = .white
+        self.contentButton.delegate = self
     }
     
     private func setConstraints() {
@@ -67,7 +67,7 @@ final class MovieView: UIView {
             $0.width.equalTo(UIScreen.main.bounds.width - 50)
             $0.height.equalTo(42)
         }
-        contentImageView.snp.makeConstraints {
+        contentButton.snp.makeConstraints {
             $0.width.equalTo(UIScreen.main.bounds.width - 100)
             $0.height.equalTo(250)
             $0.centerX.equalTo(titleLabel)
@@ -77,9 +77,15 @@ final class MovieView: UIView {
             $0.centerX.equalTo(titleLabel)
             $0.width.equalTo(UIScreen.main.bounds.width - 20)
             $0.height.equalTo(150)
-            $0.top.equalTo(contentImageView.snp.bottom).offset(20)
+            $0.top.equalTo(contentButton.snp.bottom).offset(20)
             $0.leading.equalToSuperview().offset(20)
             $0.bottom.equalTo(safeAreaLayoutGuide).offset(-20)
         }
+    }
+}
+
+extension MovieView: AnimationButtonDelegate {
+    func didChangeHighlighted(highlighted: Bool) {
+        print("isHighlighted = \(highlighted)")
     }
 }
