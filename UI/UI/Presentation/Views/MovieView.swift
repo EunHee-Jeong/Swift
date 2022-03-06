@@ -56,7 +56,6 @@ final class MovieView: UIView {
             addSubview($0)
         }
         self.backgroundColor = .white
-        self.contentButton.delegate = self
     }
     
     private func setConstraints() {
@@ -84,8 +83,3 @@ final class MovieView: UIView {
     }
 }
 
-extension MovieView: AnimationButtonDelegate {
-    func didChangeHighlighted(highlighted: Bool) {
-        print("isHighlighted = \(highlighted)")
-    }
-}
