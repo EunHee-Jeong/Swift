@@ -6,15 +6,28 @@
 //
 
 import UIKit
+import UserNotifications
 
 import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        UNUserNotificationCenter.current().delegate = self
+        return true
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         UNUserNotificationCenter.current().delegate = self
         FirebaseApp.configure() // ✅ Firebase 초기화
+        
+        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+        UNUserNotificationCenter.current().requestAuthorization(options: authOptions) { _, error in
+            print("Error, Request Notifications Authorization: \(error.debugDescription)")
+        }
+        application.registerForRemoteNotifications()
+        
         return true
     }
 
