@@ -26,6 +26,8 @@
 		F692767F27846BBC0004071F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F692767D27846BBC0004071F /* LaunchScreen.storyboard */; };
 		F693C7B52785EDA700F773CA /* CutstomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F693C7B42785EDA700F773CA /* CutstomNavigationBar.swift */; };
 		F693C7B72785EDB900F773CA /* CustomNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = F693C7B62785EDB900F773CA /* CustomNavigationBar.xib */; };
+		F6BC99F527D4576E00274FAF /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BC99F427D4576E00274FAF /* MovieViewController.swift */; };
+		F6BC99F727D4577E00274FAF /* MovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BC99F627D4577E00274FAF /* MovieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		F692767E27846BBC0004071F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F693C7B42785EDA700F773CA /* CutstomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutstomNavigationBar.swift; sourceTree = "<group>"; };
 		F693C7B62785EDB900F773CA /* CustomNavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNavigationBar.xib; sourceTree = "<group>"; };
+		F6BC99F427D4576E00274FAF /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		F6BC99F627D4577E00274FAF /* MovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +181,7 @@
 				F60501E927ACB2320010DEC8 /* ViewController.swift */,
 				F605023627B6417B0010DEC8 /* DynamicSizingViewController.swift */,
 				F605023727B6417B0010DEC8 /* DynamicSizingViewController.xib */,
+				F6BC99F427D4576E00274FAF /* MovieViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 				F693C7B42785EDA700F773CA /* CutstomNavigationBar.swift */,
 				F605023227B63D750010DEC8 /* DynamicSizingTableViewCell.swift */,
 				F605023327B63D750010DEC8 /* DynamicSizingTableViewCell.xib */,
+				F6BC99F627D4577E00274FAF /* MovieView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -282,8 +288,10 @@
 				F605022E27B63B390010DEC8 /* DynamicSizingModel.swift in Sources */,
 				F692767327846BBA0004071F /* AppDelegate.swift in Sources */,
 				F60501F627AD33480010DEC8 /* UIStackView+Extension.swift in Sources */,
+				F6BC99F527D4576E00274FAF /* MovieViewController.swift in Sources */,
 				F60501EA27ACB2320010DEC8 /* ViewController.swift in Sources */,
 				F605023827B6417B0010DEC8 /* DynamicSizingViewController.swift in Sources */,
+				F6BC99F727D4577E00274FAF /* MovieView.swift in Sources */,
 				F692767527846BBA0004071F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

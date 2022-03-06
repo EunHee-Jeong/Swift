@@ -13,3 +13,12 @@ extension String {
         return !isEmpty
     }
 }
+
+extension NSMutableAttributedString {
+    public func linked(text: String, url: String) {
+        let foundRange = self.mutableString.range(of: text)
+        if foundRange.location != NSNotFound {
+            self.addAttribute(.link, value: url, range: foundRange)
+        }
+    }
+}
