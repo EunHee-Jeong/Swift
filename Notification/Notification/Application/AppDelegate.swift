@@ -21,6 +21,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure() // ✅ Firebase 초기화
         
+        // ✅ FCM에 현재 등록된 토큰 알려주는 부분
+        Messaging.messaging().delegate = self
+        Messaging.messaging().token { token, error in
+            if let error = error {
+                print("ERROR FCM 등록토큰 가져오기: \(error.localizedDescription)")
+            } else if let token = token {
+                print("FCM 등록토큰: \(token)")
+            }
+        }
+        
         let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
         UNUserNotificationCenter.current().requestAuthorization(options: authOptions) { _, error in
             print("Error, Request Notifications Authorization: \(error.debugDescription)")
