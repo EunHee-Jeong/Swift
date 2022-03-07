@@ -20,9 +20,6 @@
                                 <rect key="frame" x="132" y="380" width="111" height="53"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Button"/>
-                                <connections>
-                                    <action selector="notificationButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8kp-O5-KJ4"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

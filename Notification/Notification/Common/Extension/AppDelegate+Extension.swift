@@ -20,10 +20,4 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
         completionHandler([.badge, .sound, .banner, .list])
     }
     
-    // 앱이 알림을 수신했을 때 작동하는 메서드
-    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        let _ = response.notification.request.content.userInfo  // deep link 처리하려면 와일드카드 이용
-        
-        completionHandler()
-    }
 }

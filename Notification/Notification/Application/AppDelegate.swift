@@ -19,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        UNUserNotificationCenter.current().delegate = self
         FirebaseApp.configure() // ✅ Firebase 초기화
         
         let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
