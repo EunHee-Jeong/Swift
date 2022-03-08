@@ -19,7 +19,6 @@ final class AlertListViewController: UITableViewController {
         super.viewDidLoad()
         
         registerNib()
-        assignDelegation()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -62,11 +61,6 @@ final class AlertListViewController: UITableViewController {
         let nib = UINib(nibName: "AlertListCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "AlertListCell")
     }
-    
-    private func assignDelegation() {
-        tableView.delegate = self
-        tableView.dataSource = self
-    }
 }
 
 // MARK: - Extensions
@@ -82,7 +76,6 @@ extension AlertListViewController {
             UserDefaults.standard.set(try? PropertyListEncoder().encode(self.alertList), forKey: "alertList")
             userNotificationCenter.removePendingNotificationRequests(withIdentifiers: [alertList[indexPath.row].id])
             self.tableView.reloadData()
-            return
         default:
             break
         }

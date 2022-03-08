@@ -190,6 +190,8 @@
 		F6BC9A0627D70A1000274FAF /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				F6BC9A1227D70CAF00274FAF /* AlertListCell.swift */,
+				F6BC9A1327D70CAF00274FAF /* AlertListCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -198,8 +200,6 @@
 			isa = PBXGroup;
 			children = (
 				F6BC9A0D27D70A7600274FAF /* AlertListView.storyboard */,
-				F6BC9A1227D70CAF00274FAF /* AlertListCell.swift */,
-				F6BC9A1327D70CAF00274FAF /* AlertListCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
