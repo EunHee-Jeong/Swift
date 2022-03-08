@@ -14,9 +14,6 @@ final class AlertListViewController: UITableViewController {
     private var alertList: [AlertModel] = [ ]
     let userNotificationCenter = UNUserNotificationCenter.current()
     
-    // MARK: - @IBOutlet Properties
-    @IBOutlet var alertListTableView: UITableView!
-    
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +45,7 @@ final class AlertListViewController: UITableViewController {
             self.alertList = newAlertList
             UserDefaults.standard.set(try? PropertyListEncoder().encode(self.alertList), forKey: "alertList")
             self.userNotificationCenter.addNotificationRequest(by: newAlert)
-            self.alertListTableView.reloadData()
+            self.tableView.reloadData()
         }
         self.present(nextVC, animated: true)
     }
@@ -63,12 +60,12 @@ final class AlertListViewController: UITableViewController {
     
     private func registerNib() {
         let nib = UINib(nibName: "AlertListCell", bundle: nil)
-        alertListTableView.register(nib, forCellReuseIdentifier: "AlertListCell")
+        tableView.register(nib, forCellReuseIdentifier: "AlertListCell")
     }
     
     private func assignDelegation() {
-        alertListTableView.delegate = self
-        alertListTableView.dataSource = self
+        tableView.delegate = self
+        tableView.dataSource = self
     }
 }
 
@@ -84,7 +81,7 @@ extension AlertListViewController {
             self.alertList.remove(at: indexPath.row)
             UserDefaults.standard.set(try? PropertyListEncoder().encode(self.alertList), forKey: "alertList")
             userNotificationCenter.removePendingNotificationRequests(withIdentifiers: [alertList[indexPath.row].id])
-            self.alertListTableView.reloadData()
+            self.tableView.reloadData()
             return
         default:
             break
