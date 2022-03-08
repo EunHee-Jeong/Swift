@@ -18,6 +18,12 @@
 		F6BC99FF27D5041000274FAF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6BC99FE27D5041000274FAF /* GoogleService-Info.plist */; };
 		F6BC9A0227D5052A00274FAF /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F6BC9A0127D5052A00274FAF /* FirebaseAnalytics */; };
 		F6BC9A0427D5052A00274FAF /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = F6BC9A0327D5052A00274FAF /* FirebaseMessaging */; };
+		F6BC9A0B27D70A3900274FAF /* AlertListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BC9A0A27D70A3900274FAF /* AlertListViewController.swift */; };
+		F6BC9A0E27D70A7600274FAF /* AlertListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6BC9A0D27D70A7600274FAF /* AlertListView.storyboard */; };
+		F6BC9A1427D70CAF00274FAF /* AlertListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BC9A1227D70CAF00274FAF /* AlertListCell.swift */; };
+		F6BC9A1527D70CAF00274FAF /* AlertListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6BC9A1327D70CAF00274FAF /* AlertListCell.xib */; };
+		F6BC9A1827D70EB000274FAF /* AlertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BC9A1727D70EB000274FAF /* AlertModel.swift */; };
+		F6BC9A1C27D73F2500274FAF /* AddAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BC9A1B27D73F2500274FAF /* AddAlertViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,12 @@
 		F635EEE827D0FBEC009B9246 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F635EEED27D104AA009B9246 /* AppDelegate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extension.swift"; sourceTree = "<group>"; };
 		F6BC99FE27D5041000274FAF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F6BC9A0A27D70A3900274FAF /* AlertListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertListViewController.swift; sourceTree = "<group>"; };
+		F6BC9A0D27D70A7600274FAF /* AlertListView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlertListView.storyboard; sourceTree = "<group>"; };
+		F6BC9A1227D70CAF00274FAF /* AlertListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertListCell.swift; sourceTree = "<group>"; };
+		F6BC9A1327D70CAF00274FAF /* AlertListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertListCell.xib; sourceTree = "<group>"; };
+		F6BC9A1727D70EB000274FAF /* AlertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertModel.swift; sourceTree = "<group>"; };
+		F6BC9A1B27D73F2500274FAF /* AddAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlertViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +99,7 @@
 		F635EEDF27D0FB15009B9246 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F6BC9A0527D7096500274FAF /* Drink */,
 				F635EEE027D0FB21009B9246 /* Common */,
 				F635EEE127D0FB30009B9246 /* ServerPush */,
 			);
@@ -160,6 +173,51 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		F6BC9A0527D7096500274FAF /* Drink */ = {
+			isa = PBXGroup;
+			children = (
+				F6BC9A1627D70EA400274FAF /* Models */,
+				F6BC9A0727D70A1600274FAF /* Views */,
+				F6BC9A0627D70A1000274FAF /* Cells */,
+				F6BC9A0827D70A1A00274FAF /* Controllers */,
+			);
+			path = Drink;
+			sourceTree = "<group>";
+		};
+		F6BC9A0627D70A1000274FAF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F6BC9A0727D70A1600274FAF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F6BC9A0D27D70A7600274FAF /* AlertListView.storyboard */,
+				F6BC9A1227D70CAF00274FAF /* AlertListCell.swift */,
+				F6BC9A1327D70CAF00274FAF /* AlertListCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F6BC9A0827D70A1A00274FAF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F6BC9A0A27D70A3900274FAF /* AlertListViewController.swift */,
+				F6BC9A1B27D73F2500274FAF /* AddAlertViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F6BC9A1627D70EA400274FAF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F6BC9A1727D70EB000274FAF /* AlertModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -225,9 +283,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6BC9A1527D70CAF00274FAF /* AlertListCell.xib in Resources */,
 				F635EED627D0FA86009B9246 /* LaunchScreen.storyboard in Resources */,
 				F6BC99FF27D5041000274FAF /* GoogleService-Info.plist in Resources */,
 				F635EED327D0FA86009B9246 /* Assets.xcassets in Resources */,
+				F6BC9A0E27D70A7600274FAF /* AlertListView.storyboard in Resources */,
 				F635EED127D0FA84009B9246 /* ServerPushView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,11 +299,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6BC9A0B27D70A3900274FAF /* AlertListViewController.swift in Sources */,
 				F635EEEE27D104AA009B9246 /* AppDelegate+Extension.swift in Sources */,
 				F635EECE27D0FA84009B9246 /* ServerPushViewController.swift in Sources */,
+				F6BC9A1427D70CAF00274FAF /* AlertListCell.swift in Sources */,
+				F6BC9A1827D70EB000274FAF /* AlertModel.swift in Sources */,
 				F635EEE927D0FBEC009B9246 /* BaseViewController.swift in Sources */,
 				F635EECA27D0FA84009B9246 /* AppDelegate.swift in Sources */,
 				F635EECC27D0FA84009B9246 /* SceneDelegate.swift in Sources */,
+				F6BC9A1C27D73F2500274FAF /* AddAlertViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +461,7 @@
 				INFOPLIST_FILE = Notification/Supports/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = ServerPushView;
+				INFOPLIST_KEY_UIMainStoryboardFile = AlertListView;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -425,7 +489,7 @@
 				INFOPLIST_FILE = Notification/Supports/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = ServerPushView;
+				INFOPLIST_KEY_UIMainStoryboardFile = AlertListView;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
