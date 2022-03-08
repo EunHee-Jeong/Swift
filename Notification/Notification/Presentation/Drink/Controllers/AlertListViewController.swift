@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import UserNotifications
 
 final class AlertListViewController: UITableViewController {
 
     // MARK: - Properties
     private var alertList: [AlertModel] = [ ]
+    let userNotificationCenter = UNUserNotificationCenter.current()
     
     // MARK: - @IBOutlet Properties
     @IBOutlet var alertListTableView: UITableView!
@@ -45,6 +47,7 @@ final class AlertListViewController: UITableViewController {
             
             self.alertList = newAlertList
             UserDefaults.standard.set(try? PropertyListEncoder().encode(self.alertList), forKey: "alertList")
+            self.userNotificationCenter.addNotificationRequest(by: newAlert)
             self.alertListTableView.reloadData()
         }
         self.present(nextVC, animated: true)
@@ -80,6 +83,7 @@ extension AlertListViewController {
         case .delete:
             self.alertList.remove(at: indexPath.row)
             UserDefaults.standard.set(try? PropertyListEncoder().encode(self.alertList), forKey: "alertList")
+            userNotificationCenter.removePendingNotificationRequests(withIdentifiers: [alertList[indexPath.row].id])
             self.alertListTableView.reloadData()
             return
         default:
