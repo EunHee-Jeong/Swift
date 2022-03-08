@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ServerPushViewController.swift
 //  Notification
 //
 //  Created by 정은희 on 2022/03/03.
@@ -8,7 +8,7 @@
 import UIKit
 import UserNotifications
 
-final class ViewController: BaseViewController {
+final class ServerPushViewController: BaseViewController {
 
     // MARK: - Properties
     
@@ -16,10 +16,5 @@ final class ViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-    // MARK: - @IBAction Properties
-    
-    // MARK: - Functions
-
 }
 
