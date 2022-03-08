@@ -24,6 +24,7 @@
 		F6BC9A1527D70CAF00274FAF /* AlertListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6BC9A1327D70CAF00274FAF /* AlertListCell.xib */; };
 		F6BC9A1827D70EB000274FAF /* AlertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BC9A1727D70EB000274FAF /* AlertModel.swift */; };
 		F6BC9A1C27D73F2500274FAF /* AddAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BC9A1B27D73F2500274FAF /* AddAlertViewController.swift */; };
+		F6BC9A4A27D7820100274FAF /* UNNotificationCenter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BC9A4927D7820100274FAF /* UNNotificationCenter+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		F6BC9A1327D70CAF00274FAF /* AlertListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertListCell.xib; sourceTree = "<group>"; };
 		F6BC9A1727D70EB000274FAF /* AlertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertModel.swift; sourceTree = "<group>"; };
 		F6BC9A1B27D73F2500274FAF /* AddAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlertViewController.swift; sourceTree = "<group>"; };
+		F6BC9A4927D7820100274FAF /* UNNotificationCenter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UNNotificationCenter+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				F635EEED27D104AA009B9246 /* AppDelegate+Extension.swift */,
+				F6BC9A4927D7820100274FAF /* UNNotificationCenter+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				F635EEE927D0FBEC009B9246 /* BaseViewController.swift in Sources */,
 				F635EECA27D0FA84009B9246 /* AppDelegate.swift in Sources */,
 				F635EECC27D0FA84009B9246 /* SceneDelegate.swift in Sources */,
+				F6BC9A4A27D7820100274FAF /* UNNotificationCenter+Extension.swift in Sources */,
 				F6BC9A1C27D73F2500274FAF /* AddAlertViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -22,6 +22,10 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
         completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         completionHandler([.badge, .sound, .banner, .list])
     }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        completionHandler()
+    }
 }
 
 extension AppDelegate: MessagingDelegate {

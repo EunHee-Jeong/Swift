@@ -13,12 +13,22 @@ import Firebase
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
+    var userNotificationCenter: UNUserNotificationCenter?
+    
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         UNUserNotificationCenter.current().delegate = self
         return true
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+        userNotificationCenter?.requestAuthorization(options: authOptions) { _, error in
+            if let error = error {
+                print("ERROR: notification authorization request \(error.localizedDescription)")
+            }
+        }
+        
         FirebaseApp.configure() // ✅ Firebase 초기화
         
         // ✅ FCM에 현재 등록된 토큰 알려주는 부분
@@ -31,7 +41,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         
-        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
         UNUserNotificationCenter.current().requestAuthorization(options: authOptions) { _, error in
             print("Error, Request Notifications Authorization: \(error.debugDescription)")
         }
