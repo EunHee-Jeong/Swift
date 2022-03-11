@@ -1,5 +1,5 @@
 //
-//  LinkView.swift
+//  MovieView.swift
 //  UI
 //
 //  Created by 정은희 on 2022/03/06.

@@ -72,9 +72,9 @@
 		F60501E627ACB1880010DEC8 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				F605022C27B63B2E0010DEC8 /* Models */,
-				F693C7B32785ED8400F773CA /* Views */,
-				F692768827846BFA0004071F /* Controllers */,
+				F60501EC27ACB2DD0010DEC8 /* Common */,
+				F6BC9A5027DAFCD200274FAF /* DynamicSizing */,
+				F6BC9A4D27DAFC8800274FAF /* Etc */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -178,35 +178,75 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		F692768827846BFA0004071F /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				F60501EC27ACB2DD0010DEC8 /* Common */,
-				F60501E927ACB2320010DEC8 /* ViewController.swift */,
-				F605023627B6417B0010DEC8 /* DynamicSizingViewController.swift */,
-				F605023727B6417B0010DEC8 /* DynamicSizingViewController.xib */,
-				F6BC99F427D4576E00274FAF /* MovieViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		F693C7B32785ED8400F773CA /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				F693C7B62785EDB900F773CA /* CustomNavigationBar.xib */,
-				F693C7B42785EDA700F773CA /* CutstomNavigationBar.swift */,
-				F605023227B63D750010DEC8 /* DynamicSizingTableViewCell.swift */,
-				F605023327B63D750010DEC8 /* DynamicSizingTableViewCell.xib */,
-				F6BC99F627D4577E00274FAF /* MovieView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		F6BC99FD27D4AB6700274FAF /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		F6BC9A4D27DAFC8800274FAF /* Etc */ = {
+			isa = PBXGroup;
+			children = (
+				F6BC9A4E27DAFC9A00274FAF /* Views */,
+				F6BC9A4F27DAFCC500274FAF /* Controllers */,
+			);
+			path = Etc;
+			sourceTree = "<group>";
+		};
+		F6BC9A4E27DAFC9A00274FAF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F6BC99F627D4577E00274FAF /* MovieView.swift */,
+				F693C7B62785EDB900F773CA /* CustomNavigationBar.xib */,
+				F693C7B42785EDA700F773CA /* CutstomNavigationBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F6BC9A4F27DAFCC500274FAF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F6BC99F427D4576E00274FAF /* MovieViewController.swift */,
+				F60501E927ACB2320010DEC8 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F6BC9A5027DAFCD200274FAF /* DynamicSizing */ = {
+			isa = PBXGroup;
+			children = (
+				F605022C27B63B2E0010DEC8 /* Models */,
+				F6BC9A5227DAFCF900274FAF /* Views */,
+				F6BC9A5327DAFD0900274FAF /* Controllers */,
+			);
+			path = DynamicSizing;
+			sourceTree = "<group>";
+		};
+		F6BC9A5127DAFCD800274FAF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F605023227B63D750010DEC8 /* DynamicSizingTableViewCell.swift */,
+				F605023327B63D750010DEC8 /* DynamicSizingTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F6BC9A5227DAFCF900274FAF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F6BC9A5127DAFCD800274FAF /* Cells */,
+				F605023727B6417B0010DEC8 /* DynamicSizingViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F6BC9A5327DAFD0900274FAF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F605023627B6417B0010DEC8 /* DynamicSizingViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
