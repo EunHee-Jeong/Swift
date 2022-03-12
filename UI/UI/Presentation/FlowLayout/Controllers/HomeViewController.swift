@@ -7,6 +7,23 @@
 
 import UIKit
 
+import SwiftUI
+
+struct Previews: PreviewProvider {
+    static var previews: some View {
+        Container().edgesIgnoringSafeArea(.all)
+    }
+    
+    struct Container: UIViewControllerRepresentable {
+        func makeUIViewController(context: Context) -> UIViewController {
+            let homeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
+            return UINavigationController(rootViewController: homeViewController)
+        }
+        func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) { }
+        typealias UIViewControllerType = UIViewController
+    }
+}
+
 final class HomeViewController: BaseViewController {
     
     // MARK: - Properties
