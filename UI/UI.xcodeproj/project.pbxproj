@@ -84,9 +84,9 @@
 		F60501E627ACB1880010DEC8 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				F6BC9A5627DBA10F00274FAF /* FlowLayout */,
 				F60501EC27ACB2DD0010DEC8 /* Common */,
 				F6BC9A5027DAFCD200274FAF /* DynamicSizing */,
+				F6BC9A5627DBA10F00274FAF /* Flow+CompositionalLayout */,
 				F6BC9A4D27DAFC8800274FAF /* Etc */,
 			);
 			path = Presentation;
@@ -263,14 +263,14 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		F6BC9A5627DBA10F00274FAF /* FlowLayout */ = {
+		F6BC9A5627DBA10F00274FAF /* Flow+CompositionalLayout */ = {
 			isa = PBXGroup;
 			children = (
 				F6BC9A5727DBA11A00274FAF /* Models */,
 				F6BC9A5827DBA12800274FAF /* Views */,
 				F6BC9A5927DBA13300274FAF /* Controllers */,
 			);
-			path = FlowLayout;
+			path = "Flow+CompositionalLayout";
 			sourceTree = "<group>";
 		};
 		F6BC9A5727DBA11A00274FAF /* Models */ = {
