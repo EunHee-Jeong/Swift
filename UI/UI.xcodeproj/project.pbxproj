@@ -29,6 +29,12 @@
 		F6BC99F527D4576E00274FAF /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BC99F427D4576E00274FAF /* MovieViewController.swift */; };
 		F6BC99F727D4577E00274FAF /* MovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BC99F627D4577E00274FAF /* MovieView.swift */; };
 		F6BC99FC27D4AADA00274FAF /* AnimationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BC99FB27D4AADA00274FAF /* AnimationButton.swift */; };
+		F6BC9A5B27DBA17800274FAF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BC9A5A27DBA17800274FAF /* HomeViewController.swift */; };
+		F6BC9A5E27DBA1C000274FAF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BC9A5D27DBA1C000274FAF /* HomeView.swift */; };
+		F6BC9A6127DC73C500274FAF /* Content.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6BC9A6027DC73C500274FAF /* Content.plist */; };
+		F6BC9A6327DC73FA00274FAF /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BC9A6227DC73FA00274FAF /* Content.swift */; };
+		F6BC9A6527DC7C8600274FAF /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BC9A6427DC7C8600274FAF /* ContentCollectionViewCell.swift */; };
+		F6BC9A6827DC9EC700274FAF /* ContentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BC9A6727DC9EC700274FAF /* ContentHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +60,12 @@
 		F6BC99F427D4576E00274FAF /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		F6BC99F627D4577E00274FAF /* MovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieView.swift; sourceTree = "<group>"; };
 		F6BC99FB27D4AADA00274FAF /* AnimationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationButton.swift; sourceTree = "<group>"; };
+		F6BC9A5A27DBA17800274FAF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F6BC9A5D27DBA1C000274FAF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F6BC9A6027DC73C500274FAF /* Content.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Content.plist; sourceTree = "<group>"; };
+		F6BC9A6227DC73FA00274FAF /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		F6BC9A6427DC7C8600274FAF /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewCell.swift; sourceTree = "<group>"; };
+		F6BC9A6727DC9EC700274FAF /* ContentHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +84,7 @@
 		F60501E627ACB1880010DEC8 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F6BC9A5627DBA10F00274FAF /* FlowLayout */,
 				F60501EC27ACB2DD0010DEC8 /* Common */,
 				F6BC9A5027DAFCD200274FAF /* DynamicSizing */,
 				F6BC9A4D27DAFC8800274FAF /* Etc */,
@@ -91,6 +104,7 @@
 		F60501E827ACB1AF0010DEC8 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				F6BC9A6027DC73C500274FAF /* Content.plist */,
 				F689455B27869F8C00F22187 /* Info.plist */,
 			);
 			path = Support;
@@ -249,6 +263,50 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		F6BC9A5627DBA10F00274FAF /* FlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				F6BC9A5727DBA11A00274FAF /* Models */,
+				F6BC9A5827DBA12800274FAF /* Views */,
+				F6BC9A5927DBA13300274FAF /* Controllers */,
+			);
+			path = FlowLayout;
+			sourceTree = "<group>";
+		};
+		F6BC9A5727DBA11A00274FAF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F6BC9A6227DC73FA00274FAF /* Content.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F6BC9A5827DBA12800274FAF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F6BC9A5F27DBA1C300274FAF /* Cells */,
+				F6BC9A5D27DBA1C000274FAF /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F6BC9A5927DBA13300274FAF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F6BC9A5A27DBA17800274FAF /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F6BC9A5F27DBA1C300274FAF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F6BC9A6427DC7C8600274FAF /* ContentCollectionViewCell.swift */,
+				F6BC9A6727DC9EC700274FAF /* ContentHeaderView.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -317,6 +375,7 @@
 			files = (
 				F605023527B63D750010DEC8 /* DynamicSizingTableViewCell.xib in Resources */,
 				F692767F27846BBC0004071F /* LaunchScreen.storyboard in Resources */,
+				F6BC9A6127DC73C500274FAF /* Content.plist in Resources */,
 				F605023927B6417B0010DEC8 /* DynamicSizingViewController.xib in Resources */,
 				F693C7B72785EDB900F773CA /* CustomNavigationBar.xib in Resources */,
 				F692767C27846BBC0004071F /* Assets.xcassets in Resources */,
@@ -335,12 +394,17 @@
 				F60501EE27ACB2E50010DEC8 /* BaseViewController.swift in Sources */,
 				F60501F427AD32CE0010DEC8 /* String+Extension.swift in Sources */,
 				F605020327AE31A20010DEC8 /* RoundButton.swift in Sources */,
+				F6BC9A6827DC9EC700274FAF /* ContentHeaderView.swift in Sources */,
+				F6BC9A6327DC73FA00274FAF /* Content.swift in Sources */,
+				F6BC9A5E27DBA1C000274FAF /* HomeView.swift in Sources */,
 				F693C7B52785EDA700F773CA /* CutstomNavigationBar.swift in Sources */,
 				F605022E27B63B390010DEC8 /* DynamicSizingModel.swift in Sources */,
 				F692767327846BBA0004071F /* AppDelegate.swift in Sources */,
 				F6BC99FC27D4AADA00274FAF /* AnimationButton.swift in Sources */,
+				F6BC9A6527DC7C8600274FAF /* ContentCollectionViewCell.swift in Sources */,
 				F60501F627AD33480010DEC8 /* UIStackView+Extension.swift in Sources */,
 				F6BC99F527D4576E00274FAF /* MovieViewController.swift in Sources */,
+				F6BC9A5B27DBA17800274FAF /* HomeViewController.swift in Sources */,
 				F60501EA27ACB2320010DEC8 /* ViewController.swift in Sources */,
 				F605023827B6417B0010DEC8 /* DynamicSizingViewController.swift in Sources */,
 				F6BC99F727D4577E00274FAF /* MovieView.swift in Sources */,
