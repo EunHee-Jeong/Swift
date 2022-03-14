@@ -43,16 +43,8 @@ final class HomeViewController: BaseViewController {
         view = homeView
     }
     
-    override func style() {
-        super.style()
-        
-        navigationController?.navigationBar.backgroundColor = .clear
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        navigationController?.navigationBar.shadowImage = UIImage()
-        navigationController?.hidesBarsOnSwipe = true
-        
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "netflix_icon"), style: .plain, target: nil, action: nil)
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "person.crop.circle"), style: .plain, target: nil, action: nil)
+    override func setNavigation(backgroundColor: UIColor = .clear, hidesBarsOnSwipe: Bool = true) {
+        super.setNavigation(backgroundColor: backgroundColor, hidesBarsOnSwipe: hidesBarsOnSwipe)
     }
     
     // MARK: - Functions

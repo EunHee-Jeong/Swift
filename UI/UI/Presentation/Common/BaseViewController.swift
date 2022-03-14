@@ -13,11 +13,27 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
 
         style()
+        setNavigation()
         hierarchy()
         layout()
     }
 
     public func style() { }
+    public func setNavigation(backgroundColor: UIColor = .clear,
+                              hidesBarsOnSwipe: Bool = true) {
+        guard let navigationBar = navigationController?.navigationBar else { return }
+        navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationBar.shadowImage = UIImage()
+        
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = backgroundColor
+        
+        guard let navigationController = navigationController else { return }
+        navigationController.hidesBarsOnSwipe = hidesBarsOnSwipe
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "netflix_icon"), style: .plain, target: nil, action: nil)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "person.crop.circle"), style: .plain, target: nil, action: nil)
+    }
     public func hierarchy() { }
     public func layout() { }
 }

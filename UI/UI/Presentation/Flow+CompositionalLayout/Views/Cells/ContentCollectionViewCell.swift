@@ -42,7 +42,7 @@ final class ContentCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Functions
     private func setUI() {
-        addSubview(imageView)
+        contentView.addSubview(imageView)
     }
     
     private func setConstraint() {
