@@ -1,4 +1,6 @@
-## 정리
+## Syntax
+
+### 1. 기초 문법
 
 | 기초 문법 |   리드미   |
 | :--: | :----------: |
@@ -7,7 +9,14 @@
 | Basic 3 | [☃️](https://github.com/EunHee-Jeong/iOS-Labs/blob/dad97f9e0a3486b4381b3f8d24400a109a880c67/Syntax/%EA%B5%AC%EC%A1%B0%EC%B2%B4vs%ED%81%B4%EB%9E%98%EC%8A%A4.md) |
 | Basic 4 | [☃️](https://github.com/EunHee-Jeong/iOS-Labs/blob/a212c5316b28ab1b343b764bc8d353ad39545aae/Syntax/%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0,%20%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%20%EA%B0%90%EC%8B%9C%EC%9E%90,%20%EC%83%81%EC%86%8D,%20%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4%EC%9D%98%20%EC%83%9D%EC%84%B1%EA%B3%BC%20%EC%86%8C%EB%A9%B8.md) |
 | Basic 5 | [☃️](https://github.com/EunHee-Jeong/iOS-Labs/blob/f77da6f41f50eeb94e87b034f0e58ee160a68c38/Syntax/%EC%98%B5%EC%85%94%EB%84%90%20%EC%B2%B4%EC%9D%B8,%20nil%20%EB%B3%91%ED%95%A9%20%EC%97%B0%EC%82%B0%EC%9E%90,%20%ED%83%80%EC%9E%85%20%EC%BA%90%EC%8A%A4%ED%8C%85.md) |
-| Basic 6 | |
+| Basic 6 | [☃️](https://github.com/EunHee-Jeong/iOS-Labs/blob/b484b5ed8ad873803e6f89a28161f58d911dd595/Syntax/Markdowns/assert,%20guard,%20protocol,%20extension.md)|
+
+- [Swift_basic](https://github.com/i-colours-u/Swift_basic) 문서를 참고하여 정리했습니다.
+
+-----
+
+### 2. 활용
+
 
 | 활용 |   리드미   |
 | :--: | :----------: |
