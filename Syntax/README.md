@@ -15,7 +15,7 @@
 
 -----
 
-### 2. 활용
+### 2. 더 알아보기
 
 
 | 활용 |   리드미   |
@@ -23,3 +23,4 @@
 | 클로저 → 고차함수 | [❄️](https://github.com/EunHee-Jeong/iOS-Labs/blob/a57013eb67b65aba6fd8ab3c43e8bf4ada1479f7/Syntax/%EA%B3%A0%EC%B0%A8%ED%95%A8%EC%88%98.md) |
 | 클로저 → 캡쳐리스트 | [❄️](https://github.com/EunHee-Jeong/iOS-Labs/blob/8ce57ed5892262ee370bfa874c66aa8aa0a65e23/Syntax/%EC%BA%A1%EC%B3%90%EB%A6%AC%EC%8A%A4%ED%8A%B8.md) |
 | 데이터 타입 고급 → 열거형 | [❄️](https://github.com/EunHee-Jeong/iOS-Labs/blob/5733e3f496f84c75132a94665e580e3af7a903c0/Syntax/%EC%97%B4%EA%B1%B0%ED%98%95.md) |
+| @frozen, @discardableResult, 접근 제한자 | [❄️](https://github.com/EunHee-Jeong/iOS-Labs/blob/567ca73a97e7e56760d55e02f767ac233faff027/Syntax/Markdowns/@frozen,%20@discardableResult,%20%EC%A0%91%EA%B7%BC%20%EC%A0%9C%ED%95%9C%EC%9E%90.md) |
