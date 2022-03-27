@@ -3,5 +3,7 @@
 | 개념 정리 |   리드미   |
 | :--: | :----------: |
 | API Key | [☀️](https://github.com/EunHee-Jeong/iOS-Labs/blob/0bd14f56506bdbc4d10290ec53d2a0eb1c9734f6/Neworking/Markdowns/API%20Key.md) |
+| HTTP, URLSession, Codable | [☀️](https://github.com/EunHee-Jeong/iOS-Labs/blob/3bb9d51f75c89f4cdeb16d4e779d214cf1448375/Neworking/Markdowns/HTTP,%20URLSession,%20Codable.md) |
 | 웹 통신과 프로토콜, HTTP | [☀️](https://github.com/EunHee-Jeong/iOS-Labs/blob/cb2de4fe2898d65fb8d0b8409b9811c38c464f32/Neworking/Markdowns/%EC%9B%B9%20%ED%86%B5%EC%8B%A0%EA%B3%BC%20%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C,%20HTTP.md) |
+| SSL(TLS) | [☀️](https://github.com/EunHee-Jeong/iOS-Labs/blob/3bb9d51f75c89f4cdeb16d4e779d214cf1448375/Neworking/Markdowns/SSL(TLS).md) |
 | URLSession | [☀️](https://github.com/EunHee-Jeong/iOS-Labs/blob/cb2de4fe2898d65fb8d0b8409b9811c38c464f32/Neworking/Markdowns/URLSession.md) |
