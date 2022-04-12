@@ -30,7 +30,8 @@
 
 ### 😇  View
 
-- UIViewController에 해당
+- UIView, UIViewController 둘 다 해당
+
     - UI 요소 뿐만이 아닌, 관련 작업들도 처리할 수 있음
 
 ### 😇  Interaction
