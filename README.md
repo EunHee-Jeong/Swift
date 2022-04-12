@@ -5,7 +5,8 @@
 | 폴더 |   설명   |
 | :--: | :----------: |
 | MyPhotos | PhotoKit |
-| Networking | 네트워킹 |
-| UI | UI 짜기 연습 |
-| Syntax | Swift 문법 |
+| Networking | 서버 통신 |
 | Notification | 푸시 알림 (Local / Remote(APNs)) |
+| Syntax | Swift 문법 |
+| UI | UI 짜기 연습 |
+| VIPER | 아키텍처 공부 |
