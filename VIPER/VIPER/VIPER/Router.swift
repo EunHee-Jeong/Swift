@@ -19,6 +19,7 @@ import UIKit
  - entry point -> 각 모듈의 진입점 (= 아키텍처의 시작점)
  */
 
+// MARK: - Initialization
 typealias EntryPoint = AnyView & UIViewController
 
 // 라우터 설정

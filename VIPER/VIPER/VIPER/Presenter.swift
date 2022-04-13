@@ -14,6 +14,7 @@ import Foundation
  - interactor, router, view를 참조함
  */
 
+// MARK: - Initialization
 enum FetchError: Error {
     case failed
 }

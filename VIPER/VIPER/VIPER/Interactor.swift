@@ -17,6 +17,7 @@ import Foundation
  (= API 호출에 필요한 데이터 목록과 같은 presenter가 처리할 작업들을 건네줌)
  */
 
+// MARK: - Initialization
 protocol AnyInteractor {
     var presenter: AnyPresenter? { get set }    // presenter에 대한 참조
     func getUsers() // presenter가 수행할 작업들

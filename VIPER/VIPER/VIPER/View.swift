@@ -15,6 +15,7 @@ import UIKit
  - 구체적인 구현부
  */
 
+// MARK: - Initialization
 protocol AnyView {
     // presenter에 대한 참조
     var presenter: AnyPresenter? { get set }
@@ -59,6 +60,7 @@ final class UserViewController: UIViewController, AnyView {
         wrongLabel.center = view.center
     }
     
+    // MARK: - Functions
     func setUI() {
         view.addSubview(userTableView)
         view.addSubview(wrongLabel)
