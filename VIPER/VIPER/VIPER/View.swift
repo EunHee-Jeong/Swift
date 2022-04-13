@@ -24,13 +24,11 @@ protocol AnyView {
     func update(with error: String)
 }
 
-class UserViewController: UIViewController, AnyView {
+final class UserViewController: UIViewController, AnyView {
     
     // MARK: - Properties
     var presenter: AnyPresenter?
-    
     var users: [User] = []
-    
     private let userTableView: UITableView = {
        let userTable = UITableView()
         userTable.register(UITableViewCell.self,
@@ -38,7 +36,6 @@ class UserViewController: UIViewController, AnyView {
         userTable.isHidden = true
         return userTable
     }()
-    
     private let wrongLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
@@ -57,8 +54,7 @@ class UserViewController: UIViewController, AnyView {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        // interactor를 레이아웃 뷰의 서브뷰로 재정의
-        userTableView.frame = view.bounds
+        userTableView.frame = view.bounds   // interactor를 레이아웃 뷰의 서브뷰로 재정의
         wrongLabel.frame = CGRect(x: 0, y: 0, width: 200, height: 50)
         wrongLabel.center = view.center
     }

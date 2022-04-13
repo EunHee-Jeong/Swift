@@ -23,21 +23,24 @@ typealias EntryPoint = AnyView & UIViewController
 
 // 라우터 설정
 protocol AnyRouter {
-    // view를 참조
-    var entry: EntryPoint? { get }    // 이를 통해 SceneDelegate에 앱의 진입점을 알려줄 수 있음
+    // view를 참조 (이를 통해 SceneDelegate에 앱의 진입점을 알려줄 수 있음)
+    var entry: EntryPoint? { get }
     
     static func start() -> AnyRouter
 }
 
-// 라우터 구현
-// VIPER의 모든 구성 요소를 설정하고 반환하는 부분 !!
-class UserRouter: AnyRouter {
+// 라우터 구현 (VIPER의 모든 구성 요소를 설정하고 반환하는 부분 !!)
+final class UserRouter: AnyRouter {
+    
+    // MARK: - Protocols
     var entry: EntryPoint?
     
+    // MARK: - Functions
     static func start() -> AnyRouter {
         let router = UserRouter()
         
         // 내부에 다른 바이퍼를 할당해주는 부분
+        
         // 1. view, interactor, presenter 설정
         var view: AnyView = UserViewController()
         var presenter: AnyPresenter = UserPresenter()

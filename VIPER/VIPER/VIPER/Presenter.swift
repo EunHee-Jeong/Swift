@@ -28,18 +28,19 @@ protocol AnyPresenter {
     func interactorDidFetchUsers(with result: Result<[User], Error>)
 }
 
-class UserPresenter: AnyPresenter {
-    var router: AnyRouter?
+final class UserPresenter: AnyPresenter {
     
+    // MARK: - Properties
+    var router: AnyRouter?
     var interactor: AnyInteractor? {
         didSet {
             // 사용자 참조 목록을 가져오는 부분
             interactor?.getUsers()
         }
     }
-    
     var view: AnyView?
     
+    // MARK: - Functions
     func interactorDidFetchUsers(with result: Result<[User], Error>) {
         switch result {
         case .success(let users):

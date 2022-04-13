@@ -18,20 +18,20 @@ import Foundation
  */
 
 protocol AnyInteractor {
-    // presenter에 대한 참조
-    var presenter: AnyPresenter? { get set }
-    
-    // presenter가 수행할 작업들
-    func getUsers()
+    var presenter: AnyPresenter? { get set }    // presenter에 대한 참조
+    func getUsers() // presenter가 수행할 작업들
     /*
      idea가 준비되면 presenter에게 바로 알리기 때문에, completion handler를 사용하지 않음.
      (= call back을 받는 대신 매개변수를 사용하지 않음)
      */
 }
 
-class UserInteractor: AnyInteractor {
+final class UserInteractor: AnyInteractor {
+    
+    // MARK: - Properties
     var presenter: AnyPresenter?
     
+    // MARK: - Functions
     func getUsers() {
         print("Start fetching")
         guard let url = URL(string: "https://jsonplaceholder.typicode.com/users") else { return }
