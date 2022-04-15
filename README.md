@@ -5,6 +5,7 @@
 | 폴더 |   설명   |
 | :--: | :----------: |
 | Architecture | 아키텍처 공부 |
+| Auth | 사용자 인증 관련 |
 | MyPhotos | PhotoKit |
 | Networking | 서버 통신 |
 | Notification | 푸시 알림 (Local / Remote(APNs)) |
