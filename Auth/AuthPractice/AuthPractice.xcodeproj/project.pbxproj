@@ -43,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F669CC86280DCBD600EAE8E7 /* RegEx */ = {
+			isa = PBXGroup;
+			children = (
+				F68DF50C28090882001D5048 /* SignInView.storyboard */,
+				F68DF50A28090882001D5048 /* SignInViewController.swift */,
+			);
+			path = RegEx;
+			sourceTree = "<group>";
+		};
 		F68DF4FA28090882001D5048 = {
 			isa = PBXGroup;
 			children = (
@@ -89,7 +98,7 @@
 		F68DF51C280908A1001D5048 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				F68DF525280DA149001D5048 /* Common */,
+				F68DF522280DA119001D5048 /* Extensions */,
 				F68DF51D280908B4001D5048 /* Application */,
 				F68DF51E280908C3001D5048 /* Presentation */,
 			);
@@ -109,8 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				F68DF51F2809099B001D5048 /* Common */,
-				F68DF50C28090882001D5048 /* SignInView.storyboard */,
-				F68DF50A28090882001D5048 /* SignInViewController.swift */,
+				F669CC86280DCBD600EAE8E7 /* RegEx */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -130,14 +138,6 @@
 				F68DF526280DA3FD001D5048 /* String+.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		F68DF525280DA149001D5048 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				F68DF522280DA119001D5048 /* Extensions */,
-			);
-			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
