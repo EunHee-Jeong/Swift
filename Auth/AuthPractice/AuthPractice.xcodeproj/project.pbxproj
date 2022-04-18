@@ -14,6 +14,7 @@
 		F68DF51028090883001D5048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F68DF50F28090883001D5048 /* Assets.xcassets */; };
 		F68DF51328090883001D5048 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F68DF51128090883001D5048 /* LaunchScreen.storyboard */; };
 		F68DF521280909A9001D5048 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68DF520280909A9001D5048 /* BaseViewController.swift */; };
+		F68DF524280DA129001D5048 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68DF523280DA129001D5048 /* UITextField+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F68DF51228090883001D5048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F68DF51428090883001D5048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F68DF520280909A9001D5048 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F68DF523280DA129001D5048 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		F68DF51C280908A1001D5048 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				F68DF525280DA149001D5048 /* Common */,
 				F68DF51D280908B4001D5048 /* Application */,
 				F68DF51E280908C3001D5048 /* Presentation */,
 			);
@@ -114,6 +117,22 @@
 			isa = PBXGroup;
 			children = (
 				F68DF520280909A9001D5048 /* BaseViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F68DF522280DA119001D5048 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F68DF523280DA129001D5048 /* UITextField+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F68DF525280DA149001D5048 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F68DF522280DA119001D5048 /* Extensions */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -190,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F68DF50B28090882001D5048 /* SignInViewController.swift in Sources */,
+				F68DF524280DA129001D5048 /* UITextField+.swift in Sources */,
 				F68DF521280909A9001D5048 /* BaseViewController.swift in Sources */,
 				F68DF50728090882001D5048 /* AppDelegate.swift in Sources */,
 				F68DF50928090882001D5048 /* SceneDelegate.swift in Sources */,
