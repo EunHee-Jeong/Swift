@@ -33,14 +33,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="iVv-4i-kKb">
                                 <rect key="frame" x="20" y="293" width="335" height="54"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="18102007@seoultech.ac.kr" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="18" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0j4-mr-gf3">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="18102007@seoultech.ac.kr" textAlignment="natural" minimumFontSize="18" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0j4-mr-gf3">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="54"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="335" id="296-5Q-RbQ"/>
                                             <constraint firstAttribute="height" constant="54" id="mEo-kF-GFC"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  이메일 형식이 올바르지 않아요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGu-13-pYE">
                                         <rect key="frame" x="0.0" y="0.0" width="164.33333333333334" height="0.0"/>
@@ -59,7 +59,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="F67-8f-zAL">
                                 <rect key="frame" x="20" y="401" width="335" height="54"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="8~16자의 영문, 숫자, 특수문자" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="18" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5u7-Ls-fpj">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="8~16자의 영문, 숫자, 특수문자" textAlignment="natural" minimumFontSize="18" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5u7-Ls-fpj">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="54"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="335" id="3rr-gE-cSW"/>
@@ -85,7 +85,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="012-VO-oVL">
                                 <rect key="frame" x="20" y="509" width="335" height="54"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호를 한번 더 입력해 주세요" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="18" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9cj-3I-bim">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호를 한번 더 입력해 주세요" textAlignment="natural" minimumFontSize="18" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9cj-3I-bim">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="54"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="335" id="Fok-sb-VRH"/>
@@ -115,7 +115,7 @@
                                         <fragment content="다음">
                                             <attributes>
                                                 <color key="NSColor" systemColor="secondaryLabelColor"/>
-                                                <font key="NSFont" size="18" name=".AppleSDGothicNeoI-Bold"/>
+                                                <font key="NSFont" metaFont="system" size="18"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -136,7 +136,7 @@
                             <constraint firstItem="zRb-gJ-OfT" firstAttribute="top" secondItem="F67-8f-zAL" secondAttribute="bottom" constant="28" id="aOs-eS-xlC"/>
                             <constraint firstItem="1bJ-4I-Hpj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ce8-UE-mSb"/>
                             <constraint firstItem="iVv-4i-kKb" firstAttribute="top" secondItem="jDL-Ll-CKd" secondAttribute="bottom" constant="8" id="dLo-RY-zbG"/>
-                            <constraint firstItem="sWT-8R-Lzo" firstAttribute="top" secondItem="012-VO-oVL" secondAttribute="bottom" constant="130" id="fSV-hC-5fz"/>
+                            <constraint firstItem="sWT-8R-Lzo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="bottom" constant="-119" id="fSV-hC-5fz"/>
                             <constraint firstItem="jDL-Ll-CKd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gEE-Do-IZf"/>
                             <constraint firstItem="1bJ-4I-Hpj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="124" id="hch-WZ-IFC"/>
                             <constraint firstItem="Ato-yc-aNi" firstAttribute="top" secondItem="iVv-4i-kKb" secondAttribute="bottom" constant="28" id="i1B-qT-mIp"/>
@@ -147,9 +147,12 @@
                     </view>
                     <connections>
                         <outlet property="checkTextField" destination="9cj-3I-bim" id="Te0-X8-Rgn"/>
+                        <outlet property="checkWarningLabel" destination="ut0-yX-PMI" id="FpU-SM-F23"/>
                         <outlet property="emailTextField" destination="0j4-mr-gf3" id="1nG-Mx-fFk"/>
+                        <outlet property="emailWarningLabel" destination="xGu-13-pYE" id="zPg-iA-PVU"/>
                         <outlet property="nextButton" destination="sWT-8R-Lzo" id="bk1-eR-HlD"/>
                         <outlet property="passwordTextField" destination="5u7-Ls-fpj" id="CpE-YN-jxk"/>
+                        <outlet property="passwordWarningLabel" destination="a3V-va-0tH" id="Cye-fg-VWf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

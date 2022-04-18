@@ -12,12 +12,14 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        addTarget()
         hierarchy()
         navigation()
         layout()
         style()
     }
     
+    public func addTarget() { }
     public func hierarchy() { }
     public func navigation(backgroundColor: UIColor = .clear) {
             guard let navigationBar = navigationController?.navigationBar else { return }
