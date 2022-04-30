@@ -17,11 +17,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)    // 기본 화면 설정
         window?.windowScene = windowScene
 
-        let homeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
-        let rootViewController = UINavigationController(rootViewController: homeViewController)
+        let viewController = EasyTipViewSampleViewController(nibName: EasyTipViewSampleViewController.identifier, bundle: nil)
+        let rootViewController = UINavigationController(rootViewController: viewController)
         
         window?.rootViewController = rootViewController
         window?.makeKeyAndVisible()
+        window?.backgroundColor = .white
     }
 }
 

@@ -34,6 +34,8 @@
 		F6BC9A6327DC73FA00274FAF /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BC9A6227DC73FA00274FAF /* Content.swift */; };
 		F6BC9A6527DC7C8600274FAF /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BC9A6427DC7C8600274FAF /* ContentCollectionViewCell.swift */; };
 		F6BC9A6827DC9EC700274FAF /* ContentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BC9A6727DC9EC700274FAF /* ContentHeaderView.swift */; };
+		F6EA7450281D009F00163B2E /* EasyTipSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA744F281D009F00163B2E /* EasyTipSampleView.swift */; };
+		F6EA7452281D00A800163B2E /* EasyTipViewSampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA7451281D00A800163B2E /* EasyTipViewSampleController.swift */; };
 		F6F62819281C2BAE006BDF67 /* ViewPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F62818281C2BAE006BDF67 /* ViewPresentable.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,8 @@
 		F6BC9A6227DC73FA00274FAF /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		F6BC9A6427DC7C8600274FAF /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewCell.swift; sourceTree = "<group>"; };
 		F6BC9A6727DC9EC700274FAF /* ContentHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentHeaderView.swift; sourceTree = "<group>"; };
+		F6EA744F281D009F00163B2E /* EasyTipSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTipSampleView.swift; sourceTree = "<group>"; };
+		F6EA7451281D00A800163B2E /* EasyTipViewSampleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTipViewSampleController.swift; sourceTree = "<group>"; };
 		F6F62818281C2BAE006BDF67 /* ViewPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,7 +94,6 @@
 				68AD387DC5097110688C46BB /* Pods-UI.debug.xcconfig */,
 				661FA0878EFC52499296E030 /* Pods-UI.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -105,6 +108,7 @@
 		F60501E627ACB1880010DEC8 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F6EA744D281D006D00163B2E /* ToolTip */,
 				F60501EC27ACB2DD0010DEC8 /* Common */,
 				F6BC9A5027DAFCD200274FAF /* DynamicSizing */,
 				F6BC9A5627DBA10F00274FAF /* Flow+CompositionalLayout */,
@@ -323,6 +327,15 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		F6EA744D281D006D00163B2E /* ToolTip */ = {
+			isa = PBXGroup;
+			children = (
+				F6EA744F281D009F00163B2E /* EasyTipSampleView.swift */,
+				F6EA7451281D00A800163B2E /* EasyTipViewSampleController.swift */,
+			);
+			path = ToolTip;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -442,9 +455,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6F62819281C2BAE006BDF67 /* ViewPresentable.swift in Sources */,
+				F6EA7452281D00A800163B2E /* EasyTipViewSampleController.swift in Sources */,
 				F605023427B63D750010DEC8 /* DynamicSizingTableViewCell.swift in Sources */,
 				F60501F827AD33E10010DEC8 /* UITextField+Extension.swift in Sources */,
 				F60501EE27ACB2E50010DEC8 /* BaseViewController.swift in Sources */,
+				F6EA7450281D009F00163B2E /* EasyTipSampleView.swift in Sources */,
 				F60501F427AD32CE0010DEC8 /* String+Extension.swift in Sources */,
 				F605020327AE31A20010DEC8 /* RoundButton.swift in Sources */,
 				F6BC9A6827DC9EC700274FAF /* ContentHeaderView.swift in Sources */,
