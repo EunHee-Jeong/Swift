@@ -11,6 +11,7 @@ import SnapKit
 import Then
 
 final class ContentHeaderView: UICollectionReusableView {
+    static let identifier = "ContentHeaderView"
     let sectionNameLabel = UILabel().then {
         $0.font = .systemFont(ofSize: 17, weight: .bold)
         $0.textColor = .white

@@ -13,6 +13,8 @@ import Then
 final class ContentCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Properties
+    static let identifier = "ContentCollectionViewCell"
+    
     let imageView = UIImageView().then {
         $0.contentMode = .scaleAspectFill
     }

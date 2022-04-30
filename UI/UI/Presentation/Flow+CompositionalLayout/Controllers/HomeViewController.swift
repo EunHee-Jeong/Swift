@@ -16,7 +16,7 @@ struct Previews: PreviewProvider {
     
     struct Container: UIViewControllerRepresentable {
         func makeUIViewController(context: Context) -> UIViewController {
-            let homeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
+            let homeViewController = HomeViewController(nibName: ContentCollectionViewCell.identifier, bundle: nil)
             return UINavigationController(rootViewController: homeViewController)
         }
         func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) { }
@@ -93,7 +93,7 @@ extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         switch contents[indexPath.section].sectionType {
         case .basic, .large:
-            guard let cell = homeView.homeCollectionView.dequeueReusableCell(withReuseIdentifier: "ContentCollectionViewCell", for: indexPath) as? ContentCollectionViewCell else { return UICollectionViewCell() }
+            guard let cell = homeView.homeCollectionView.dequeueReusableCell(withReuseIdentifier: ContentCollectionViewCell.identifier, for: indexPath) as? ContentCollectionViewCell else { return UICollectionViewCell() }
             cell.imageView.image = contents[indexPath.section].contentItem[indexPath.row].image
             return cell
         default:
@@ -104,7 +104,7 @@ extension HomeViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         if kind == UICollectionView.elementKindSectionHeader {
-            guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "ContentHeaderView", for: indexPath) as? ContentHeaderView else { fatalError("Could not dequeue Header") }
+            guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ContentHeaderView.identifier, for: indexPath) as? ContentHeaderView else { fatalError("Could not dequeue Header") }
             header.sectionNameLabel.text = contents[indexPath.section].sectionName
             return header
         } else {
