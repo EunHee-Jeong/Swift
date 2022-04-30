@@ -9,7 +9,7 @@ import UIKit
 
 import SnapKit
 
-final class ViewController: BaseViewController {
+final class ViewController: BaseViewController, ViewPresentable {
     
     // MARK: - Properties
     private var redButton: UIButton = UIButton()
@@ -21,19 +21,18 @@ final class ViewController: BaseViewController {
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .white
     }
 
     // MARK: - Functions
-    override func layout() {
-        super.layout()
-        
+    func setUI() {
         [redButton, blueButton, greenButton, pinkButton].forEach {
             view.addSubview($0)
         }
         view.addSubview(resultLabel)
-        
+        view.backgroundColor = .white
+    }
+    
+    func setConstraints() {
         redButton.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
             make.leading.equalToSuperview()
@@ -74,8 +73,8 @@ final class ViewController: BaseViewController {
         }
     }
     
-    override func style() {
-        super.style()
+    override func setStyle() {
+        super.setStyle()
         
         [redButton, blueButton, greenButton, pinkButton].forEach {
             $0.setTitleColor(.white, for: .normal)
