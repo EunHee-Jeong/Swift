@@ -1,0 +1,24 @@
+PODS:
+  - EasyTipView (2.1.0)
+  - SnapKit (5.6.0)
+  - Then (3.0.0)
+
+DEPENDENCIES:
+  - EasyTipView (~> 2.1)
+  - SnapKit (~> 5.6.0)
+  - Then
+
+SPEC REPOS:
+  trunk:
+    - EasyTipView
+    - SnapKit
+    - Then
+
+SPEC CHECKSUMS:
+  EasyTipView: a92b6edc377b81c5ac18e9fd35d5ee78e9409488
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
+
+PODFILE CHECKSUM: 74f35dc449eea352b5aa4e4f8aabfe6f0fa3d874
+
+COCOAPODS: 1.11.2
