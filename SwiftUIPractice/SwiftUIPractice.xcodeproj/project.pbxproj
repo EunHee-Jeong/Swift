@@ -14,6 +14,7 @@
 		F6B6937D282BD52400012C13 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B6937C282BD52400012C13 /* CustomView.swift */; };
 		F6D92D12282CBCFA00A054E7 /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D92D11282CBCFA00A054E7 /* PracticeView.swift */; };
 		F6D92D16282CBE9D00A054E7 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D92D15282CBE9D00A054E7 /* ButtonView.swift */; };
+		F6D92D18282CD31100A054E7 /* ZStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D92D17282CD31100A054E7 /* ZStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		F6B6937C282BD52400012C13 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		F6D92D11282CBCFA00A054E7 /* PracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
 		F6D92D15282CBE9D00A054E7 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		F6D92D17282CD31100A054E7 /* ZStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				F6D92D11282CBCFA00A054E7 /* PracticeView.swift */,
 				F6D92D15282CBE9D00A054E7 /* ButtonView.swift */,
+				F6D92D17282CD31100A054E7 /* ZStackView.swift */,
 			);
 			path = UI_Practice;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			files = (
 				F6B6937D282BD52400012C13 /* CustomView.swift in Sources */,
 				F6B69371282BD4B500012C13 /* ContentView.swift in Sources */,
+				F6D92D18282CD31100A054E7 /* ZStackView.swift in Sources */,
 				F6D92D16282CBE9D00A054E7 /* ButtonView.swift in Sources */,
 				F6B6936F282BD4B500012C13 /* SwiftUIPracticeApp.swift in Sources */,
 				F6D92D12282CBCFA00A054E7 /* PracticeView.swift in Sources */,
