@@ -10,5 +10,6 @@
 | MyPhotos | PhotoKit |
 | Networking | 서버 통신 |
 | Notification | 푸시 알림 (Local / Remote(APNs)) |
+| SwiftUIPractice | SwiftUI로 UI 짜기 연습 |
 | Syntax | Swift 문법 |
-| UI | UI 짜기 연습 |
+| UI | UIKit로 UI 짜기 연습 |
