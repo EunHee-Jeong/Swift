@@ -15,6 +15,7 @@
 		F6D92D12282CBCFA00A054E7 /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D92D11282CBCFA00A054E7 /* PracticeView.swift */; };
 		F6D92D16282CBE9D00A054E7 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D92D15282CBE9D00A054E7 /* ButtonView.swift */; };
 		F6D92D18282CD31100A054E7 /* ZStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D92D17282CD31100A054E7 /* ZStackView.swift */; };
+		F6D92D1A282CD88500A054E7 /* NaviView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D92D19282CD88500A054E7 /* NaviView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		F6D92D11282CBCFA00A054E7 /* PracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
 		F6D92D15282CBE9D00A054E7 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		F6D92D17282CD31100A054E7 /* ZStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStackView.swift; sourceTree = "<group>"; };
+		F6D92D19282CD88500A054E7 /* NaviView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				F6D92D11282CBCFA00A054E7 /* PracticeView.swift */,
 				F6D92D15282CBE9D00A054E7 /* ButtonView.swift */,
 				F6D92D17282CD31100A054E7 /* ZStackView.swift */,
+				F6D92D19282CD88500A054E7 /* NaviView.swift */,
 			);
 			path = UI_Practice;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6D92D1A282CD88500A054E7 /* NaviView.swift in Sources */,
 				F6B6937D282BD52400012C13 /* CustomView.swift in Sources */,
 				F6B69371282BD4B500012C13 /* ContentView.swift in Sources */,
 				F6D92D18282CD31100A054E7 /* ZStackView.swift in Sources */,
