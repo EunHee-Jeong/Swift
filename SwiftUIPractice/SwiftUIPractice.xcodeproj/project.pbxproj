@@ -13,6 +13,7 @@
 		F6B69376282BD4B700012C13 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6B69375282BD4B700012C13 /* Preview Assets.xcassets */; };
 		F6B6937D282BD52400012C13 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B6937C282BD52400012C13 /* CustomView.swift */; };
 		F6D92D12282CBCFA00A054E7 /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D92D11282CBCFA00A054E7 /* PracticeView.swift */; };
+		F6D92D16282CBE9D00A054E7 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D92D15282CBE9D00A054E7 /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		F6B69375282BD4B700012C13 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F6B6937C282BD52400012C13 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		F6D92D11282CBCFA00A054E7 /* PracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
+		F6D92D15282CBE9D00A054E7 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				F6D92D11282CBCFA00A054E7 /* PracticeView.swift */,
+				F6D92D15282CBE9D00A054E7 /* ButtonView.swift */,
 			);
 			path = UI_Practice;
 			sourceTree = "<group>";
