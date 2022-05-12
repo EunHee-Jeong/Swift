@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F64E9829282CDCA3008C549F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64E9828282CDCA3008C549F /* ContentView.swift */; };
 		F6B6936F282BD4B500012C13 /* SwiftUIPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B6936E282BD4B500012C13 /* SwiftUIPracticeApp.swift */; };
-		F6B69371282BD4B500012C13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B69370282BD4B500012C13 /* ContentView.swift */; };
 		F6B69373282BD4B700012C13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6B69372282BD4B700012C13 /* Assets.xcassets */; };
 		F6B69376282BD4B700012C13 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6B69375282BD4B700012C13 /* Preview Assets.xcassets */; };
 		F6B6937D282BD52400012C13 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B6937C282BD52400012C13 /* CustomView.swift */; };
@@ -19,9 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F64E9828282CDCA3008C549F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F6B6936B282BD4B500012C13 /* SwiftUIPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6B6936E282BD4B500012C13 /* SwiftUIPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPracticeApp.swift; sourceTree = "<group>"; };
-		F6B69370282BD4B500012C13 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F6B69372282BD4B700012C13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6B69375282BD4B700012C13 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F6B6937C282BD52400012C13 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
@@ -61,6 +61,7 @@
 		F6B6936D282BD4B500012C13 /* SwiftUIPractice */ = {
 			isa = PBXGroup;
 			children = (
+				F6D92D1B282CDC3B00A054E7 /* State&Binding */,
 				F6D92D14282CBE3400A054E7 /* Basic */,
 				F6D92D13282CBE2A00A054E7 /* UI_Practice */,
 				F6B6936E282BD4B500012C13 /* SwiftUIPracticeApp.swift */,
@@ -92,10 +93,17 @@
 		F6D92D14282CBE3400A054E7 /* Basic */ = {
 			isa = PBXGroup;
 			children = (
-				F6B69370282BD4B500012C13 /* ContentView.swift */,
 				F6B6937C282BD52400012C13 /* CustomView.swift */,
 			);
 			path = Basic;
+			sourceTree = "<group>";
+		};
+		F6D92D1B282CDC3B00A054E7 /* State&Binding */ = {
+			isa = PBXGroup;
+			children = (
+				F64E9828282CDCA3008C549F /* ContentView.swift */,
+			);
+			path = "State&Binding";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,7 +178,7 @@
 			files = (
 				F6D92D1A282CD88500A054E7 /* NaviView.swift in Sources */,
 				F6B6937D282BD52400012C13 /* CustomView.swift in Sources */,
-				F6B69371282BD4B500012C13 /* ContentView.swift in Sources */,
+				F64E9829282CDCA3008C549F /* ContentView.swift in Sources */,
 				F6D92D18282CD31100A054E7 /* ZStackView.swift in Sources */,
 				F6D92D16282CBE9D00A054E7 /* ButtonView.swift in Sources */,
 				F6B6936F282BD4B500012C13 /* SwiftUIPracticeApp.swift in Sources */,
