@@ -17,7 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)    // 기본 화면 설정
         window?.windowScene = windowScene
 
-        let viewController = EasyTipViewSampleViewController(nibName: EasyTipViewSampleViewController.identifier, bundle: nil)
+        let viewController = CarouselViewController(nibName: CarouselViewController.reuseIdentifier, bundle: nil)
         let rootViewController = UINavigationController(rootViewController: viewController)
         
         window?.rootViewController = rootViewController

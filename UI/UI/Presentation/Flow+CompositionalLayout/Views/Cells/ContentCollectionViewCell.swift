@@ -13,8 +13,6 @@ import Then
 final class ContentCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Properties
-    static let identifier = "ContentCollectionViewCell"
-    
     let imageView = UIImageView().then {
         $0.contentMode = .scaleAspectFill
     }
@@ -41,8 +39,10 @@ final class ContentCollectionViewCell: UICollectionViewCell {
         contentView.layer.cornerRadius = 5
         contentView.clipsToBounds = true
     }
-    
-    // MARK: - Functions
+}
+
+// MARK: - Extensions
+extension ContentCollectionViewCell {
     private func setUI() {
         contentView.addSubview(imageView)
     }

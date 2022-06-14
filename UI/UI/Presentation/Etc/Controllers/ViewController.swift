@@ -9,7 +9,7 @@ import UIKit
 
 import SnapKit
 
-final class ViewController: BaseViewController, ViewPresentable {
+final class ViewController: BaseViewController {
     
     // MARK: - Properties
     private var redButton: UIButton = UIButton()
@@ -21,58 +21,12 @@ final class ViewController: BaseViewController, ViewPresentable {
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupViews()
+        setConstraints()
     }
 
     // MARK: - Functions
-    func setUI() {
-        [redButton, blueButton, greenButton, pinkButton].forEach {
-            view.addSubview($0)
-        }
-        view.addSubview(resultLabel)
-        view.backgroundColor = .white
-    }
-    
-    func setConstraints() {
-        redButton.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
-            make.leading.equalToSuperview()
-            make.trailing.equalToSuperview()
-            make.height.equalTo(44)
-        }
-        
-        blueButton.snp.makeConstraints { make in
-            // top, leading 은 + 값을 줘야 벌어지고,
-            // bottom, trailing은 - 값을 줘야 벌어진다.
-            make.top.equalTo(redButton.snp.bottom).offset(10)
-            make.leading.equalToSuperview()
-            make.trailing.equalToSuperview()
-            make.height.equalTo(44)
-        }
-        
-        greenButton.snp.makeConstraints { make in
-            make.top.equalTo(blueButton.snp.bottom).offset(10)
-            make.leading.equalToSuperview()
-            make.trailing.equalToSuperview()
-            make.height.equalTo(44)
-        }
-        
-        pinkButton.snp.makeConstraints { make in
-            make.top.equalTo(greenButton.snp.bottom).offset(10)
-            make.leading.equalToSuperview()
-            make.trailing.equalToSuperview()
-            make.height.equalTo(44)
-        }
-        
-        resultLabel.snp.makeConstraints { make in
-            make.leading.trailing.equalToSuperview()
-            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-80)
-        }
-        
-        [redButton, blueButton, greenButton, pinkButton].forEach {
-            $0.addTarget(self, action: #selector(onClickButton(_:)), for: .touchUpInside)
-        }
-    }
-    
     override func setStyle() {
         super.setStyle()
         
@@ -109,3 +63,49 @@ final class ViewController: BaseViewController, ViewPresentable {
     }
 }
 
+extension ViewController {
+    private func setupViews() {
+        [redButton, blueButton, greenButton, pinkButton].forEach {
+            view.addSubview($0)
+        }
+        view.addSubview(resultLabel)
+        view.backgroundColor = .white
+    }
+    
+    private func setConstraints() {
+        redButton.snp.makeConstraints { make in
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+            make.leading.equalToSuperview()
+            make.trailing.equalToSuperview()
+            make.height.equalTo(44)
+        }
+        blueButton.snp.makeConstraints { make in
+            // top, leading 은 + 값을 줘야 벌어지고,
+            // bottom, trailing은 - 값을 줘야 벌어진다.
+            make.top.equalTo(redButton.snp.bottom).offset(10)
+            make.leading.equalToSuperview()
+            make.trailing.equalToSuperview()
+            make.height.equalTo(44)
+        }
+        greenButton.snp.makeConstraints { make in
+            make.top.equalTo(blueButton.snp.bottom).offset(10)
+            make.leading.equalToSuperview()
+            make.trailing.equalToSuperview()
+            make.height.equalTo(44)
+        }
+        pinkButton.snp.makeConstraints { make in
+            make.top.equalTo(greenButton.snp.bottom).offset(10)
+            make.leading.equalToSuperview()
+            make.trailing.equalToSuperview()
+            make.height.equalTo(44)
+        }
+        resultLabel.snp.makeConstraints { make in
+            make.leading.trailing.equalToSuperview()
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-80)
+        }
+        
+        [redButton, blueButton, greenButton, pinkButton].forEach {
+            $0.addTarget(self, action: #selector(onClickButton(_:)), for: .touchUpInside)
+        }
+    }
+}

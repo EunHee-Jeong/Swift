@@ -12,7 +12,6 @@ import EasyTipView
 final class EasyTipViewSampleViewController: BaseViewController {
     
     // MARK: - Properties
-    static let identifier = "EasyTipViewSampleViewController"
     private let easyTipSampleView = EasyTipSampleView()
 
     // MARK: - View Life Cycle
@@ -22,11 +21,11 @@ final class EasyTipViewSampleViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         presentToolTip()
     }
-    
-    // MARK: - Functions
+}
+
+extension EasyTipViewSampleViewController {
     private func presentToolTip() {
         var preferences = EasyTipView.Preferences()
         preferences.drawing.font = UIFont(name: "Futura-Medium", size: 14)!

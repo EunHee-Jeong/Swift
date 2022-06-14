@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 import Then
 
-final class HomeView: UIView {
+final class HomeView: BaseView {
     
     // MARK: - Properties
     let homeCollectionView = UICollectionView(frame: .zero, collectionViewLayout: .init()).then {
@@ -18,30 +18,16 @@ final class HomeView: UIView {
         layout.itemSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
         layout.headerReferenceSize = CGSize(width: 355, height: 35)
         $0.collectionViewLayout = layout
-        $0.register(ContentCollectionViewCell.self, forCellWithReuseIdentifier: ContentCollectionViewCell.identifier)
-        $0.register(ContentHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: ContentHeaderView.identifier)
+        $0.register(ContentCollectionViewCell.self, forCellWithReuseIdentifier: ContentCollectionViewCell.reuseIdentifier)
+        $0.register(ContentHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: ContentHeaderView.reuseIdentifier)
     }
     
-    
-    // MARK: - Initialization
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
-        setUI()
-        setConstraint()
-    }
-    
-    @available(*, unavailable)
-    required init?(coder: NSCoder) {
-        fatalError()
-    }
-
     // MARK: - Functions
-    private func setUI() {
+    override func setupViews() {
         addSubview(homeCollectionView)
     }
     
-    private func setConstraint() {
+    override func setConstraints() {
         homeCollectionView.snp.makeConstraints {
             $0.width.equalTo(UIScreen.main.bounds.width)
             $0.edges.equalTo(safeAreaLayoutGuide)

@@ -11,7 +11,7 @@ import SnapKit
 import Then
 
 final class ContentHeaderView: UICollectionReusableView {
-    static let identifier = "ContentHeaderView"
+    // MARK: - Properties
     let sectionNameLabel = UILabel().then {
         $0.font = .systemFont(ofSize: 17, weight: .bold)
         $0.textColor = .white
@@ -30,8 +30,10 @@ final class ContentHeaderView: UICollectionReusableView {
     required init?(coder: NSCoder) {
         fatalError()
     }
-    
-    // MARK: - Functions
+}
+
+// MARK: - Extensions
+extension ContentHeaderView {
     private func setUI() {
         addSubview(sectionNameLabel)
     }

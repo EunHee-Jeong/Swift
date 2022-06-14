@@ -11,7 +11,7 @@ import EasyTipView
 import SnapKit
 import Then
 
-final class EasyTipSampleView: UIView, ViewPresentable {
+final class EasyTipSampleView: BaseView {
 
     // MARK: - Properties
     private let detailLabel = UILabel().then {
@@ -28,26 +28,13 @@ final class EasyTipSampleView: UIView, ViewPresentable {
         $0.spacing = 4
     }
     
-    // MARK: - Initialization
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
-        setUI()
-        setConstraints()
-    }
-    
-    @available(*, unavailable)
-    required init?(coder: NSCoder) {
-        fatalError()
-    }
-    
     // MARK: - Functions
-    func setUI() {
+    override func setupViews() {
         detailStack.addArrangedSubviews(detailLabel, detailButton)
         addSubview(detailStack)
     }
     
-    func setConstraints() {
+    override func setConstraints() {
         detailButton.snp.makeConstraints { make in
             make.width.equalTo(16)
             make.height.equalTo(detailButton.snp.width)
