@@ -23,7 +23,6 @@
 		F692767527846BBA0004071F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692767427846BBA0004071F /* SceneDelegate.swift */; };
 		F692767C27846BBC0004071F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F692767B27846BBC0004071F /* Assets.xcassets */; };
 		F692767F27846BBC0004071F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F692767D27846BBC0004071F /* LaunchScreen.storyboard */; };
-		F692D0372858704E00C64630 /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692D0362858704E00C64630 /* CarouselViewController.swift */; };
 		F692D0392858710F00C64630 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692D0382858710F00C64630 /* Reusable.swift */; };
 		F692D03B2858727700C64630 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692D03A2858727700C64630 /* BaseView.swift */; };
 		F692D03D285873F500C64630 /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F692D03C285873F500C64630 /* UICollectionViewCell+Extension.swift */; };
@@ -64,7 +63,6 @@
 		F692767427846BBA0004071F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F692767B27846BBC0004071F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F692767E27846BBC0004071F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F692D0362858704E00C64630 /* CarouselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
 		F692D0382858710F00C64630 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		F692D03A2858727700C64630 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		F692D03C285873F500C64630 /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
@@ -116,7 +114,6 @@
 		F60501E627ACB1880010DEC8 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				F692D0352858701D00C64630 /* Carousel */,
 				F6EA744D281D006D00163B2E /* ToolTip */,
 				F60501EC27ACB2DD0010DEC8 /* Common */,
 				F6BC9A5027DAFCD200274FAF /* DynamicSizing */,
@@ -220,14 +217,6 @@
 				F692767427846BBA0004071F /* SceneDelegate.swift */,
 			);
 			path = Application;
-			sourceTree = "<group>";
-		};
-		F692D0352858701D00C64630 /* Carousel */ = {
-			isa = PBXGroup;
-			children = (
-				F692D0362858704E00C64630 /* CarouselViewController.swift */,
-			);
-			path = Carousel;
 			sourceTree = "<group>";
 		};
 		F6BC99FD27D4AB6700274FAF /* Protocol */ = {
@@ -480,7 +469,6 @@
 				F605023427B63D750010DEC8 /* DynamicSizingTableViewCell.swift in Sources */,
 				F60501F827AD33E10010DEC8 /* UITextField+Extension.swift in Sources */,
 				F692D0392858710F00C64630 /* Reusable.swift in Sources */,
-				F692D0372858704E00C64630 /* CarouselViewController.swift in Sources */,
 				F60501EE27ACB2E50010DEC8 /* BaseViewController.swift in Sources */,
 				F692D03D285873F500C64630 /* UICollectionViewCell+Extension.swift in Sources */,
 				F6EA7450281D009F00163B2E /* EasyTipSampleView.swift in Sources */,

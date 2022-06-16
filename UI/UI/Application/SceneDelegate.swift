@@ -14,11 +14,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        window = UIWindow(frame: windowScene.coordinateSpace.bounds)    // 기본 화면 설정
-        window?.windowScene = windowScene
+        window = UIWindow(windowScene: windowScene)
 
-        let viewController = CarouselViewController(nibName: CarouselViewController.reuseIdentifier, bundle: nil)
-        let rootViewController = UINavigationController(rootViewController: viewController)
+        let rootViewController = EasyTipViewSampleViewController()
         
         window?.rootViewController = rootViewController
         window?.makeKeyAndVisible()
