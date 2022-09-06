@@ -4,6 +4,10 @@ iOS 앱에서 사용자의 관심을 끄는 방법 중 하나이다.
 
 <br>
 
+[22.09.07 재정리](https://shy-week-7ba.notion.site/FCM-796e16138df344c1a54fedfae072ed9d)
+
+<br>
+
 ## 종류
 
 - Local Notification - 로컬 푸시, **앱 자체에서 보내는 것.** **정해진 시간에 동일한 문구로 전달**하고 싶은 경우
