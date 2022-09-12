@@ -25,3 +25,4 @@
 | 데이터 타입 고급 → 열거형 | [❄️](https://github.com/EunHee-Jeong/iOS-Labs/blob/5733e3f496f84c75132a94665e580e3af7a903c0/Syntax/%EC%97%B4%EA%B1%B0%ED%98%95.md) |
 | @frozen, @discardableResult, 접근 제한자 | [❄️](https://github.com/EunHee-Jeong/iOS-Labs/blob/567ca73a97e7e56760d55e02f767ac233faff027/Syntax/Markdowns/@frozen,%20@discardableResult,%20%EC%A0%91%EA%B7%BC%20%EC%A0%9C%ED%95%9C%EC%9E%90.md) |
 | 타입 프로퍼티 | [❄️](https://github.com/EunHee-Jeong/iOS-Labs/blob/80cd81ed04256e7f874a660dff8a48f007983ef4/Syntax/Markdowns/%ED%83%80%EC%9E%85%20%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0.md) |
+| 배열 → 고차함수 | [❄️](https://github.com/EunHee-Jeong/iOS-Labs/blob/77ade84f463afa76dd424b1b2b72effbde42d8d4/Syntax/Markdowns/array_functions.md) |
